@@ -1,0 +1,38 @@
+{
+	"version": 1,
+	"author": "ELsemeluhuy",
+	"last_update": "2026-07-22",
+	"books": [
+		{
+			"id": "algoritma_dasar",
+			"name": "Algoritma Dasar",
+			"description": "Mengenalkan konsep dasar algoritma dan logika pemrograman.",
+			"shop": "toko_buku",
+			"buy_price": 75000,
+			"sell_price": 30000,
+			"read_time": 120,
+			"required_skill": 0,
+			"effects": {
+				"programming": 5,
+				"stress": -2
+			},
+			"icon": "res://assets/books/algoritma_dasar.png"
+		},
+
+		{
+			"id": "struktur_data",
+			"name": "Struktur Data",
+			"description": "Mempelajari array, linked list, stack, queue, dan tree.",
+			"shop": "toko_buku",
+			"buy_price": 120000,
+			"sell_price": 50000,
+			"read_time": 180,
+			"required_skill": 10,
+			"effects": {
+				"programming": 10,
+				"stress": -3
+			},
+			"icon": "res://assets/books/struktur_data.png"
+		}
+	]
+}

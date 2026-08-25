@@ -1,0 +1,38 @@
+{
+	"version": 1,
+	"author": "ELsemeluhuy",
+	"last_update": "2026-07-22",
+
+	"skills": [
+		{
+			"id": "programming",
+			"name": "Programming",
+			"description": "Kemampuan membuat perangkat lunak."
+		},
+		{
+			"id": "cooking",
+			"name": "Cooking",
+			"description": "Kemampuan memasak berbagai makanan."
+		},
+		{
+			"id": "communication",
+			"name": "Communication",
+			"description": "Kemampuan berkomunikasi dengan orang lain."
+		},
+		{
+			"id": "discipline",
+			"name": "Discipline",
+			"description": "Kemampuan menjaga kedisiplinan."
+		},
+		{
+			"id": "computer",
+			"name": "Computer",
+			"description": "Kemampuan menggunakan komputer."
+		},
+		{
+			"id": "fitness",
+			"name": "Fitness",
+			"description": "Kondisi fisik dan kebugaran."
+		}
+	]
+}

@@ -1,0 +1,88 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/cleaningUi.gd" id="1_script"]
+[ext_resource type="StyleBox" uid="uid://6lud1tdkhuae" path="res://asset/theme/progresbar_back.tres" id="StyleBoxFlat_pb_back"]
+[ext_resource type="StyleBox" uid="uid://b046v3qamxpj6" path="res://asset/theme/progresbar_fill.tres" id="StyleBoxFlat_pb_fill"]
+[ext_resource type="Texture2D" uid="uid://bi1a1w568h64k" path="res://asset/art/other/board2.png" id="board2_tex_bg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bg"]
+bg_color = Color(0.18, 0.18, 0.18, 1)
+
+[node name="CleaningUi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Panel" type="NinePatchRect" parent="."]
+texture = ExtResource("board2_tex_bg")
+region_rect = Rect2(0, 0, 256, 256)
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -100.0
+offset_right = 200.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bg")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Panel/MarginContainer/VBoxContainer/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Pembersih"
+
+[node name="CloseButton" type="Button" parent="Panel/MarginContainer/VBoxContainer/Header"]
+layout_mode = 2
+text = " Tutup "
+
+[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ProgressLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Kotor: 0%"
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="Panel/MarginContainer/VBoxContainer"]
+theme_override_styles/background = ExtResource("StyleBoxFlat_pb_back")
+theme_override_styles/fill = ExtResource("StyleBoxFlat_pb_fill")
+layout_mode = 2
+custom_minimum_size = Vector2(0, 25)
+
+[node name="StartButton" type="Button" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+custom_minimum_size = Vector2(0, 40)
+text = "Mulai Membersihkan"

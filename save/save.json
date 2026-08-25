@@ -1,0 +1,46 @@
+{
+	"version": 1,
+	"player": {
+		"play_time":0,
+		"money": 100000,
+		"day": 1,
+		"time":{
+			"hour":6,
+			"minute":0
+		},	
+		"stats": {
+			"energy": 100,
+			"hunger": 100,
+			"stress": 0,
+			"mood": 100
+		},
+		"skills": {
+			"programming": 0,
+			"cooking": 0,
+			"communication": 0,
+			"discipline": 0,
+			"computer": 0
+		},
+		"inventory": [
+			{
+				"item_id": "beras",
+				"amount": 5
+			},
+			{
+				"item_id": "telur",
+				"amount": 10
+			}
+		],
+		"furniture": {
+			"kasur": 0,
+			"kompor": 0,
+			"mesin_cuci": 0,
+			"lemari": false,
+			"meja_belajar": false,
+			"kursi_belajar": false
+		},
+		"job": {
+			"current_job": ""
+		}
+	}
+}

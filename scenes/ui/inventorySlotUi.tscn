@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://ckdlc6x8vyqpt"]
+
+[ext_resource type="Script" uid="uid://8ocm2iy4fcu8" path="res://scripts/ui/inventorySlotUi.gd" id="1_1rxit"]
+[ext_resource type="StyleBox" uid="uid://cqus0etwmdall" path="res://asset/theme/slot_norm.tres" id="1_16mxo"]
+[ext_resource type="StyleBox" uid="uid://cflt8ty55edc2" path="res://asset/theme/slot_press.tres" id="2_16mxo"]
+[ext_resource type="StyleBox" uid="uid://bhbler8cg2p1q" path="res://asset/theme/slot_hover.tres" id="2_b1gu7"]
+
+[node name="InventorySlotUi" type="Button" unique_id=890249025]
+custom_minimum_size = Vector2(64, 64)
+custom_maximum_size = Vector2(64, 64)
+offset_right = 64.0
+offset_bottom = 64.0
+theme_override_styles/normal = ExtResource("1_16mxo")
+theme_override_styles/pressed = ExtResource("2_16mxo")
+theme_override_styles/hover = ExtResource("2_b1gu7")
+script = ExtResource("1_1rxit")
+
+[node name="item_icon" type="TextureRect" parent="." unique_id=1003223451]
+custom_maximum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -30.0
+offset_right = 30.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="amountLabel" type="Label" parent="." unique_id=643332766]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 36.0
+offset_right = 63.0
+offset_bottom = 62.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5

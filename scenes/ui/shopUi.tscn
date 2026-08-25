@@ -1,0 +1,196 @@
+[gd_scene format=3 uid="uid://bosa0dv0qsgx0"]
+
+[ext_resource type="Script" uid="uid://dn6i1r83wo2b6" path="res://scripts/ui/shopUi.gd" id="1_shop_ui"]
+[ext_resource type="Theme" uid="uid://bdwfj46lfyv81" path="res://asset/theme/font_theme.tres" id="1_ysw6n"]
+[ext_resource type="PackedScene" uid="uid://jjva5rhbihg8" path="res://scenes/ui/shopSlotUi.tscn" id="2_slot"]
+[ext_resource type="StyleBox" uid="uid://8xcd3vmar8cd" path="res://asset/theme/button_red.tres" id="4_weg15"]
+[ext_resource type="StyleBox" uid="uid://inya0364m2ms" path="res://asset/theme/button_red_hover.tres" id="5_hffnv"]
+[ext_resource type="StyleBox" uid="uid://bf7dftt4ewnpc" path="res://asset/theme/button_blue.tres" id="6_uuo7h"]
+[ext_resource type="StyleBox" uid="uid://jllqdmbbldyv" path="res://asset/theme/button_blue_hover.tres" id="7_8l3h1"]
+[ext_resource type="StyleBox" uid="uid://bmc31x4tjhm6y" path="res://asset/theme/pencarian_normal.tres" id="7_ckq7v"]
+[ext_resource type="StyleBox" uid="uid://c3kaxw3bfrmle" path="res://asset/theme/pencarian_focus.tres" id="8_fqrrt"]
+[ext_resource type="Texture2D" uid="uid://bdxjtjuvhj1fo" path="res://asset/art/other/board3.png" id="9_ivmhx"]
+[ext_resource type="Texture2D" uid="uid://bi1a1w568h64k" path="res://asset/art/other/board2.png" id="board2_tex_bg"]
+
+[node name="ShopUi" type="NinePatchRect" unique_id=443190068]
+custom_minimum_size = Vector2(900, 500)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 12.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ysw6n")
+texture = ExtResource("board2_tex_bg")
+region_rect = Rect2(0, 0, 256, 256)
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+script = ExtResource("1_shop_ui")
+slot_scene = ExtResource("2_slot")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1960873930]
+custom_minimum_size = Vector2(850, 450)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -121.0
+offset_top = -63.0
+offset_right = 121.0
+offset_bottom = 63.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=902247483]
+custom_minimum_size = Vector2(850, 450)
+layout_mode = 2
+theme_override_constants/separation = 13
+
+[node name="header" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=781143593]
+layout_mode = 2
+theme_override_constants/separation = 25
+
+[node name="titleLabel" type="Label" parent="MarginContainer/VBoxContainer/header" unique_id=713867161]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Toko"
+
+[node name="moneyLabel" type="Label" parent="MarginContainer/VBoxContainer/header" unique_id=1523320231]
+layout_mode = 2
+text = "Rp0"
+
+[node name="closeButton" type="Button" parent="MarginContainer/VBoxContainer/header" unique_id=152383525]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/normal = ExtResource("4_weg15")
+theme_override_styles/pressed = ExtResource("4_weg15")
+theme_override_styles/hover = ExtResource("5_hffnv")
+text = "Tutup"
+
+[node name="body" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=491981928]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="leftPanel" type="VBoxContainer" parent="MarginContainer/VBoxContainer/body" unique_id=1102167191]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="searchBar" type="LineEdit" parent="MarginContainer/VBoxContainer/body/leftPanel" unique_id=512617498]
+layout_mode = 2
+theme_override_styles/normal = ExtResource("7_ckq7v")
+theme_override_styles/focus = ExtResource("8_fqrrt")
+placeholder_text = "Cari item..."
+
+[node name="categoryFilter" type="OptionButton" parent="MarginContainer/VBoxContainer/body/leftPanel" unique_id=2077260081]
+layout_mode = 2
+theme_override_styles/normal = ExtResource("7_ckq7v")
+theme_override_styles/pressed = ExtResource("8_fqrrt")
+theme_override_styles/hover = ExtResource("8_fqrrt")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/body/leftPanel" unique_id=244095532]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/body/leftPanel/ScrollContainer" unique_id=1081262708]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="rightPanel" type="NinePatchRect" parent="MarginContainer/VBoxContainer/body" unique_id=2088152272]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("9_ivmhx")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/body/rightPanel" unique_id=437319381]
+custom_maximum_size = Vector2(400, 380)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer" unique_id=2046110884]
+layout_mode = 2
+
+[node name="itemIcon" type="TextureRect" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=1499227427]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="headerDetail" type="HBoxContainer" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=2135641382]
+layout_mode = 2
+
+[node name="itemName" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/headerDetail" unique_id=9049806]
+layout_mode = 2
+
+[node name="itemCategory" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/headerDetail" unique_id=1782778844]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="description" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=784778099]
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="priceLabel" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=1088031890]
+layout_mode = 2
+
+[node name="ownedLabel" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=474027529]
+layout_mode = 2
+
+[node name="effectsContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=1181136526]
+layout_mode = 2
+
+[node name="energy" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/effectsContainer" unique_id=2082007183]
+layout_mode = 2
+
+[node name="hunger" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/effectsContainer" unique_id=362909278]
+layout_mode = 2
+
+[node name="stress" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/effectsContainer" unique_id=785443454]
+layout_mode = 2
+
+[node name="quantityContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=996349394]
+layout_mode = 2
+alignment = 1
+
+[node name="minusButton" type="Button" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/quantityContainer" unique_id=399552650]
+layout_mode = 2
+text = " - "
+
+[node name="quantityInput" type="LineEdit" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/quantityContainer" unique_id=1700522470]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1"
+alignment = 1
+max_length = 2
+
+[node name="plusButton" type="Button" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/quantityContainer" unique_id=785090207]
+layout_mode = 2
+text = " + "
+
+[node name="buyButton" type="Button" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=300090000]
+layout_mode = 2
+theme_override_styles/normal = ExtResource("6_uuo7h")
+theme_override_styles/pressed = ExtResource("6_uuo7h")
+theme_override_styles/hover = ExtResource("7_8l3h1")
+disabled = true
+text = "Beli"

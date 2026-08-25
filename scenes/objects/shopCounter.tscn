@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cto0otm3kvxbi"]
+
+[ext_resource type="Script" uid="uid://bfenjqixrk27x" path="res://scripts/objects/shopCounter.gd" id="1_shop"]
+[ext_resource type="Texture2D" uid="uid://debo5aree1lph" path="res://asset/art/objects/bed.png" id="2_sprite"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_shop"]
+radius = 39.0
+
+[node name="shopCounter" type="Area2D" unique_id=1527486394]
+script = ExtResource("1_shop")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1530127217]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sprite")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=831820469]
+shape = SubResource("CircleShape2D_shop")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=986414481]

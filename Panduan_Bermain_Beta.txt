@@ -1,0 +1,55 @@
+        PANDUAN BERMAIN: DOUBLE SHIFT (VERSI BETA)
+
+Selamat datang di versi Beta dari Double Shift! 
+Terima kasih sudah bersedia meluangkan waktu untuk mencoba game ini. 
+
+Double Shift adalah game simulasi manajemen keluarga di mana kamu harus 
+menyeimbangkan antara mencari uang, mengurus pekerjaan rumah tangga, 
+dan menjaga agar "Beban Mental" keluarga tidak meledak.
+
+1. KONTROL DASAR
+W, A, S, D  : Menggerakkan Karakter (Atas, Kiri, Bawah, Kanan)
+Tombol E    : Berinteraksi dengan objek atau karakter lain di dekatmu
+Tombol I    : Membuka Tas / Inventory
+Tombol TAB  : Mengganti Karakter (beralih antara Suami & Istri)
+
+2. CARA BERMAIN
+- SOROTAN OBJEK (BARU!): Saat kamu mendekati objek yang bisa diajak berinteraksi 
+  (seperti kasur, kompor, atau meja), objek tersebut akan menyala atau memiliki
+  garis tepi (outline). Tekan tombol E saat itu terjadi!
+- SISTEM QUEST / MISI (BARU!): Perhatikan daftar Quest yang ada di sebelah kiri 
+  layar. Quest ini akan memandu kamu dan memberikan misi harian untuk diselesaikan!
+- MENCARI PEKERJAAN: Gunakan Komputer Pribadi di dalam rumah, buka "Job Portal" 
+  untuk melamar pekerjaan (batas melamar 1x per posisi setiap harinya). 
+  Setelah melamar, cek "Email" keesokan harinya untuk melihat panggilan kerja. 
+  Jangan lupa "Clock-in" atau Absen Kerja di luar rumah!
+- STATUS KARIR & RESIGN: Kamu tidak bisa memegang dua pekerjaan sekaligus. Jika 
+  ingin pindah tempat kerja, kamu wajib membuka menu "Status Karir" di Komputer 
+  dan menekan tombol Resign terlebih dahulu sebelum menerima tawaran kerja baru.
+- MEMBATALKAN TIDUR: Jika kamu atau anggota keluarga lain sedang tidur, aktivitas 
+  tersebut bisa dihentikan kapan saja! Cukup berinteraksi dengan kasur dan pilih 
+  opsi "Bangun" atau "Bangunkan".
+- MANAJEMEN KELUARGA: Kebersihan rumah (pakaian dan piring) akan terus menurun 
+  setiap harinya. Jaga kebersihannya dengan mencuci baju dan piring agar Beban 
+  Mental kalian tidak terus bertambah!
+- BAGI TUGAS: Jika kamu merasa kelelahan, tekan TAB untuk beralih ke pasanganmu 
+  dan lanjutkan pekerjaan rumah! Keadilan Beban Mental bisa kamu pantau di menu 
+  "Status Keluarga" di sebelah kanan layar. Usahakan panahnya tetap di tengah!
+- ANAK: Karakter anak (Wildan) tidak bisa kamu kendalikan secara langsung. 
+  Namun, kamu bisa mendekatinya lalu tekan E untuk menyuruhnya ikut melakukan 
+  tugas-tugas rumah seperti tidur, mencuci piring, atau memasak.
+- NPC & KOTA (BARU!): Pergilah keluar rumah melalui pintu untuk menjelajahi kota. 
+  Di toko-toko (Toserba, Toko Buku, Toko Furnitur, Kantor), kamu bisa berbicara 
+  langsung dengan para NPC penjaga untuk melihat sapaan mereka atau berbelanja!
+
+3. CATATAN BETA TESTER
+Karena ini masih versi Beta, wajar jika kamu menemukan bug, error, atau 
+tampilan yang agak aneh. 
+
+Jika kamu menemukan masalah, mohon catat hal berikut:
+1. Apa yang sedang kamu lakukan saat bug terjadi?
+2. Apakah game menjadi "freeze" / mati?
+3. Sampaikan masukanmu ke pembuat game ini!
+
+Selamat bermain dan semoga keluargamu sejahtera! 
+(Jangan sampai beban mentalnya berat sebelah, ya!)

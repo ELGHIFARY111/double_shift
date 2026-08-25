@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bvy71c0jx28f6"]
+
+[ext_resource type="Script" uid="uid://bu4ectqqiwcoi" path="res://scripts/ui/actionMenu.gd" id="1_42dw8"]
+[ext_resource type="PackedScene" uid="uid://8w3ya8knhprr" path="res://scenes/ui/actionButton.tscn" id="2_e302j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bwgpr"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="actionMenu" type="Panel" unique_id=1818987400]
+custom_minimum_size = Vector2(200, 250)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 121.0
+offset_top = -120.0
+offset_right = 321.0
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bwgpr")
+script = ExtResource("1_42dw8")
+button_scene = ExtResource("2_e302j")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=704299665]
+layout_mode = 0
+offset_right = 180.0
+offset_bottom = 74.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=964318338]
+layout_mode = 2
+
+[node name="title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=2147348051]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=1857651570]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="actionList" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=324097597]
+custom_minimum_size = Vector2(0, 130)
+layout_mode = 2
+size_flags_vertical = 3

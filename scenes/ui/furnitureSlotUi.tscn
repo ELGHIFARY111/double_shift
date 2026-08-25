@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://d4agrg2x3hjcp"]
+
+[ext_resource type="Script" uid="uid://qll3cy12r7gc" path="res://scripts/ui/furnitureSlotUi.gd" id="1_14uaf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glcn8"]
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+corner_detail = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ovj0l"]
+bg_color = Color(0.27250004, 0.27250004, 0.27250004, 1)
+
+[node name="InventorySlotUi" type="Button" unique_id=890249025]
+custom_minimum_size = Vector2(64, 64)
+custom_maximum_size = Vector2(64, 64)
+offset_right = 64.0
+offset_bottom = 64.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_glcn8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ovj0l")
+script = ExtResource("1_14uaf")
+
+[node name="item_icon" type="TextureRect" parent="." unique_id=1003223451]
+custom_minimum_size = Vector2(60, 60)
+custom_maximum_size = Vector2(60, 60)
+layout_mode = 1
+offset_right = 60.0
+offset_bottom = 60.0
+
+[node name="amountLabel" type="Label" parent="." unique_id=643332766]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 36.0
+offset_right = 63.0
+offset_bottom = 62.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 18

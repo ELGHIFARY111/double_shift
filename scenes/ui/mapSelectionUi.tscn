@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://820she3vi3sx"]
+
+[ext_resource type="Script" uid="uid://caelhur8lv8c7" path="res://scripts/ui/mapSelectionUi.gd" id="1_qms7q"]
+[ext_resource type="PackedScene" uid="uid://dnrgepjsel1ae" path="res://scenes/ui/destinationSlot.tscn" id="2_rnxc1"]
+[ext_resource type="Texture2D" uid="uid://bi1a1w568h64k" path="res://asset/art/other/board2.png" id="board2_tex_bg"]
+
+[node name="MapSelectionUi" type="NinePatchRect" unique_id=1606525271]
+texture = ExtResource("board2_tex_bg")
+region_rect = Rect2(0, 0, 256, 256)
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+custom_minimum_size = Vector2(600, 500)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qms7q")
+slot_scene = ExtResource("2_rnxc1")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=974960023]
+custom_minimum_size = Vector2(550, 450)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -275.0
+offset_top = -225.0
+offset_right = 275.0
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=2044082104]
+layout_mode = 2
+
+[node name="header" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=487363124]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/header" unique_id=117895011]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "Pindah Lokasi"
+
+[node name="closeButton" type="Button" parent="MarginContainer/VBoxContainer/header" unique_id=1473877507]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+text = "Tutup"
+
+[node name="destinationList" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1714706891]
+layout_mode = 2
+size_flags_vertical = 3

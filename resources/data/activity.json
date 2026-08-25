@@ -1,0 +1,102 @@
+{
+	"activities" : [
+		{
+			"id": "sleep",
+			"name": "Tidur",
+			"duration": 480,
+			"energy": 60,
+			"hunger": -10,
+			"stress": -20,
+			"hygiene": 5,
+			"money": 0,
+			"skill": null,
+			"skill_exp": 0
+		},
+
+		{
+			"id": "cook",
+			"name": "Memasak",
+			"duration": 30,
+			"energy": -5,
+			"hunger": 0,
+			"stress": 0,
+			"hygiene": 0,
+			"money": 0,
+			"skill": "cooking",
+			"skill_exp": 2
+		},
+		{
+			"id": "work",
+			"name": "Bekerja",
+			"duration": 240,
+			"energy": -35,
+			"hunger": -20,
+			"stress": 25,
+			"hygiene": -10,
+			"money": 0,
+			"skill": null,
+			"skill_exp": 0
+		},
+		{
+			"id": "wash_clothes",
+			"name": "Mencuci Pakaian",
+			"duration": 45,
+			"energy": -8,
+			"hunger": -3,
+			"stress": -2,
+			"hygiene": 2,
+			"money": 0,
+			"skill": null,
+			"skill_exp": 0
+		},
+
+		{
+			"id": "clean_room",
+			"name": "Membersihkan Kamar",
+			"duration": 30,
+			"energy": -5,
+			"hunger": -2,
+			"stress": -5,
+			"hygiene": 5,
+			"money": 0,
+			"skill": null,
+			"skill_exp": 0
+		},
+		{
+			"id" : "watch_tv",
+			"name": "Menonton TV",
+			"duration": 30,
+			"energy": 5,
+			"hunger": -2,
+			"stress": -5,
+			"hygiene": 5,
+			"money": 0,
+			"skill": null,
+			"skill_exp": 0
+		},
+		{
+			"id": "travel",
+			"name": "Bepergian",
+			"duration": 0,
+			"energy": -2,
+			"hunger": -1,
+			"stress": 0,
+			"hygiene": 0,
+			"money": 0,
+			"skill": null,
+			"skill_exp": 0
+		},
+		{
+			"id": "wash_dishes",
+			"name": "Mencuci Piring",
+			"duration": 30,
+			"energy": -3,
+			"hunger": -2,
+			"stress": -1,
+			"hygiene": 5,
+			"money": 0,
+			"skill": null,
+			"skill_exp": 0
+		}
+	]
+}

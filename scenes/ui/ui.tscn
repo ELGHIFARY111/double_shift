@@ -1,0 +1,469 @@
+[gd_scene format=3 uid="uid://cguvgpkg504bu"]
+
+[ext_resource type="Script" uid="uid://o3m3ub56fhwa" path="res://scripts/ui/ui.gd" id="1_u7n8c"]
+[ext_resource type="PackedScene" uid="uid://bq8v64h816uta" path="res://scenes/ui/inventoryUi.tscn" id="2_f5cxw"]
+[ext_resource type="PackedScene" uid="uid://di8v8h25qk3j6" path="res://scenes/ui/travelPanel.tscn" id="3_g5kmx"]
+[ext_resource type="Texture2D" uid="uid://c1f3fruesn2qy" path="res://asset/art/other/statusBoard.png" id="3_svq4k"]
+[ext_resource type="PackedScene" uid="uid://820she3vi3sx" path="res://scenes/ui/mapSelectionUi.tscn" id="4_0dwhk"]
+[ext_resource type="Theme" uid="uid://bdwfj46lfyv81" path="res://asset/theme/font_theme.tres" id="4_hc5d0"]
+[ext_resource type="StyleBox" uid="uid://8xcd3vmar8cd" path="res://asset/theme/button_red.tres" id="4_ygedu"]
+[ext_resource type="PackedScene" uid="uid://vg6vpsekepn6" path="res://scenes/ui/interactProm.tscn" id="5_0dwhk"]
+[ext_resource type="StyleBox" uid="uid://inya0364m2ms" path="res://asset/theme/button_red_hover.tres" id="5_oopc8"]
+[ext_resource type="PackedScene" uid="uid://bvy71c0jx28f6" path="res://scenes/ui/actionMenu.tscn" id="6_pfayw"]
+[ext_resource type="PackedScene" uid="uid://bosa0dv0qsgx0" path="res://scenes/ui/shopUi.tscn" id="7_shop"]
+[ext_resource type="PackedScene" uid="uid://bx3hg34yamycx" path="res://scenes/ui/cookingUi.tscn" id="8_cooking"]
+[ext_resource type="PackedScene" uid="uid://bxhyinyrhncll" path="res://scenes/ui/jobPortalUi.tscn" id="9_jobportal"]
+[ext_resource type="PackedScene" path="res://scenes/ui/cleaningUi.tscn" id="10_cleaning"]
+[ext_resource type="PackedScene" path="res://scenes/ui/emailUi.tscn" id="11_email"]
+[ext_resource type="PackedScene" path="res://scenes/ui/careerUi.tscn" id="12_career"]
+[ext_resource type="PackedScene" path="res://scenes/ui/questTrackerUi.tscn" id="100_quest"]
+[ext_resource type="PackedScene" path="res://scenes/ui/dialogueUi.tscn" id="101_dialogue"]
+[ext_resource type="StyleBox" uid="uid://6lud1tdkhuae" path="res://asset/theme/progresbar_back.tres" id="StyleBoxFlat_pb_back"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hygiene"]
+bg_color = Color(0.3, 0.75, 0.95, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0.3, 0.75, 0.95, 0.4)
+shadow_size = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tug_bg"]
+bg_color = Color(0.392157, 0.584314, 0.929412, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.72464263, 0.72464263, 0.7246424, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tug_fill"]
+bg_color = Color(0.898039, 0.443137, 0.584314, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_energy"]
+bg_color = Color(0.2, 0.85, 0.4, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0.2, 0.85, 0.4, 0.4)
+shadow_size = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hunger"]
+bg_color = Color(0.9, 0.6, 0.2, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0.9, 0.6, 0.2, 0.4)
+shadow_size = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_stress"]
+bg_color = Color(0.95, 0.3, 0.35, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0.95, 0.3, 0.35, 0.4)
+shadow_size = 4
+
+[node name="ui" type="CanvasLayer" unique_id=894390005]
+script = ExtResource("1_u7n8c")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1304066792]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=44923575]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer/VBoxContainer" unique_id=1180911209]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Panel" unique_id=1223232007]
+custom_minimum_size = Vector2(180, 50)
+layout_mode = 0
+offset_left = 20.0
+offset_right = 200.0
+offset_bottom = 50.0
+
+[node name="dayLabel" type="Label" parent="MarginContainer/VBoxContainer/Panel/HBoxContainer" unique_id=830931182]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "day 1"
+
+[node name="timeLabel" type="Label" parent="MarginContainer/VBoxContainer/Panel/HBoxContainer" unique_id=1385480538]
+layout_mode = 2
+text = "06.20"
+
+[node name="Panel2" type="Panel" parent="MarginContainer/VBoxContainer" unique_id=1100351888]
+custom_minimum_size = Vector2(0, 40)
+custom_maximum_size = Vector2(150, 40)
+layout_mode = 2
+
+[node name="moneyLabel" type="Label" parent="MarginContainer/VBoxContainer/Panel2" unique_id=1719156399]
+custom_minimum_size = Vector2(0, 40)
+custom_maximum_size = Vector2(150, -1)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Rp.1000000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="speedButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1789286686]
+custom_maximum_size = Vector2(150, -1)
+layout_mode = 2
+text = "speed"
+
+[node name="QuestTrackerUi" parent="MarginContainer/VBoxContainer" unique_id=1349591872 instance=ExtResource("100_quest")]
+layout_mode = 2
+
+[node name="MarginContainerRight" type="MarginContainer" parent="." unique_id=1793087948]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -150.0
+offset_bottom = 100.0
+grow_horizontal = 0
+
+[node name="VBoxContainerRight" type="VBoxContainer" parent="MarginContainerRight" unique_id=1628331413]
+layout_mode = 2
+
+[node name="statusButton" type="Button" parent="MarginContainerRight/VBoxContainerRight" unique_id=1340105056]
+custom_maximum_size = Vector2(150, -1)
+layout_mode = 2
+text = "status"
+
+[node name="familyStatusButton" type="Button" parent="MarginContainerRight/VBoxContainerRight" unique_id=987654321]
+custom_maximum_size = Vector2(150, -1)
+layout_mode = 2
+text = "Keluarga"
+
+[node name="windows" type="Control" parent="." unique_id=18712871]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -401.70996
+offset_bottom = 381.81
+grow_horizontal = 0
+mouse_filter = 2
+
+[node name="familyStatusPanel" type="NinePatchRect" parent="windows" unique_id=1188733517]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -199.5
+offset_top = -190.0
+offset_right = 199.5
+offset_bottom = 270.62
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_svq4k")
+patch_margin_left = 10
+patch_margin_top = 15
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="windows/familyStatusPanel" unique_id=987123654]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.562
+offset_top = -141.355
+offset_right = 180.56299
+offset_bottom = 207.89502
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="windows/familyStatusPanel/MarginContainer" unique_id=456123789]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer" unique_id=741852963]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=852963741]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.8, 0.2, 1)
+theme_override_font_sizes/font_size = 40
+text = "Status Keluarga"
+
+[node name="closeFamilyButton" type="Button" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=963852741]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/normal = ExtResource("4_ygedu")
+theme_override_styles/pressed = ExtResource("4_ygedu")
+theme_override_styles/hover = ExtResource("5_oopc8")
+text = "Tutup"
+
+[node name="HygieneGrid" type="GridContainer" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer" unique_id=1587009955]
+layout_mode = 2
+theme_override_constants/h_separation = 15
+columns = 2
+
+[node name="HygieneLabel" type="Label" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer/HygieneGrid" unique_id=1934622144]
+layout_mode = 2
+text = "Kebersihan Rumah:"
+
+[node name="hygieneBar" type="ProgressBar" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer/HygieneGrid" unique_id=1736660075]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_styles/background = ExtResource("StyleBoxFlat_pb_back")
+theme_override_styles/fill = SubResource("StyleBoxFlat_hygiene")
+step = 1.0
+value = 100.0
+
+[node name="HSeparator" type="HSeparator" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer" unique_id=753951486]
+layout_mode = 2
+
+[node name="BurdenTitle" type="Label" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer" unique_id=951753486]
+layout_mode = 2
+theme = ExtResource("4_hc5d0")
+text = "Beban Mental "
+horizontal_alignment = 1
+
+[node name="BurdenLabels" type="HBoxContainer" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer" unique_id=147258369]
+layout_mode = 2
+alignment = 1
+
+[node name="KikiLabel" type="Label" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer/BurdenLabels" unique_id=258369147]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.898039, 0.443137, 0.584314, 1)
+text = "Istri"
+
+[node name="JefriLabel" type="Label" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer/BurdenLabels" unique_id=369147258]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.392157, 0.584314, 0.929412, 1)
+text = "Suami"
+horizontal_alignment = 2
+
+[node name="burdenBar" type="ProgressBar" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer" unique_id=852147963]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_tug_bg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_tug_fill")
+step = 0.1
+value = 50.0
+show_percentage = false
+
+[node name="FamilyDetailsScroll" type="ScrollContainer" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer" unique_id=2013930520]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FamilyDetailsVBox" type="VBoxContainer" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer/FamilyDetailsScroll" unique_id=185957639]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[node name="FurnitureTitle" type="Label" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer/FamilyDetailsScroll/FamilyDetailsVBox" unique_id=269264513]
+layout_mode = 2
+text = "-- Efek Furnitur --"
+horizontal_alignment = 1
+
+[node name="FurnitureList" type="VBoxContainer" parent="windows/familyStatusPanel/MarginContainer/VBoxContainer/FamilyDetailsScroll/FamilyDetailsVBox" unique_id=302625927]
+layout_mode = 2
+
+[node name="statusPanel" type="NinePatchRect" parent="windows" unique_id=513193995]
+custom_minimum_size = Vector2(400, 350)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -401.70996
+offset_right = -1.7099609
+offset_bottom = 366.93
+grow_horizontal = 0
+texture = ExtResource("3_svq4k")
+patch_margin_top = 40
+patch_margin_bottom = 20
+
+[node name="MarginContainer" type="MarginContainer" parent="windows/statusPanel" unique_id=10029064]
+custom_minimum_size = Vector2(360.51, 279.86)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.255
+offset_top = -113.27
+offset_right = 180.255
+offset_bottom = 186.73001
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="windows/statusPanel/MarginContainer" unique_id=1164599826]
+custom_minimum_size = Vector2(270.31, 232.58)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=333438557]
+layout_mode = 2
+
+[node name="characterName" type="Label" parent="windows/statusPanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=438892566]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8, 0.2, 1)
+theme_override_font_sizes/font_size = 40
+text = "kiki"
+
+[node name="closeButton" type="Button" parent="windows/statusPanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1367113988]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_styles/normal = ExtResource("4_ygedu")
+text = "Tutup"
+
+[node name="HSeparator" type="HSeparator" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=1082128773]
+layout_mode = 2
+
+[node name="StatsGrid" type="GridContainer" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=1001910296]
+layout_mode = 2
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 10
+columns = 2
+
+[node name="energyLabel" type="Label" parent="windows/statusPanel/MarginContainer/VBoxContainer/StatsGrid" unique_id=1319915472]
+layout_mode = 2
+text = "Energi :"
+
+[node name="energyBar" type="ProgressBar" parent="windows/statusPanel/MarginContainer/VBoxContainer/StatsGrid" unique_id=239740469]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_styles/background = ExtResource("StyleBoxFlat_pb_back")
+theme_override_styles/fill = SubResource("StyleBoxFlat_energy")
+
+[node name="hungerLabel" type="Label" parent="windows/statusPanel/MarginContainer/VBoxContainer/StatsGrid" unique_id=573947418]
+layout_mode = 2
+text = "Lapar :"
+
+[node name="hungerBar" type="ProgressBar" parent="windows/statusPanel/MarginContainer/VBoxContainer/StatsGrid" unique_id=1449502127]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_styles/background = ExtResource("StyleBoxFlat_pb_back")
+theme_override_styles/fill = SubResource("StyleBoxFlat_hunger")
+
+[node name="stressLabel" type="Label" parent="windows/statusPanel/MarginContainer/VBoxContainer/StatsGrid" unique_id=1775997584]
+layout_mode = 2
+text = "Stress :"
+
+[node name="stressBar" type="ProgressBar" parent="windows/statusPanel/MarginContainer/VBoxContainer/StatsGrid" unique_id=106793790]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_styles/background = ExtResource("StyleBoxFlat_pb_back")
+theme_override_styles/fill = SubResource("StyleBoxFlat_stress")
+
+[node name="DetailsScroll" type="ScrollContainer" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=2119211601]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="DetailsVBox" type="VBoxContainer" parent="windows/statusPanel/MarginContainer/VBoxContainer/DetailsScroll" unique_id=49048048]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[node name="SkillTitle" type="Label" parent="windows/statusPanel/MarginContainer/VBoxContainer/DetailsScroll/DetailsVBox" unique_id=767073346]
+layout_mode = 2
+text = "-- Skills --"
+horizontal_alignment = 1
+
+[node name="SkillList" type="VBoxContainer" parent="windows/statusPanel/MarginContainer/VBoxContainer/DetailsScroll/DetailsVBox" unique_id=216122887]
+layout_mode = 2
+
+[node name="travelPanel" parent="." unique_id=1349025713 instance=ExtResource("3_g5kmx")]
+visible = false
+
+[node name="MapSelectionUi" parent="." unique_id=1951789491 instance=ExtResource("4_0dwhk")]
+visible = false
+
+[node name="InteractProm" parent="." unique_id=1973262151 instance=ExtResource("5_0dwhk")]
+visible = false
+
+[node name="actionMenu" parent="." unique_id=1818987400 instance=ExtResource("6_pfayw")]
+visible = false
+
+[node name="ShopUi" parent="." unique_id=898775235 instance=ExtResource("7_shop")]
+visible = false
+
+[node name="CookingUi" parent="." unique_id=1923364838 instance=ExtResource("8_cooking")]
+visible = false
+
+[node name="JobPortalUi" parent="." unique_id=437107077 instance=ExtResource("9_jobportal")]
+visible = false
+
+[node name="CleaningUi" parent="." unique_id=112784604 instance=ExtResource("10_cleaning")]
+visible = false
+
+[node name="EmailUi" parent="." unique_id=2030617467 instance=ExtResource("11_email")]
+visible = false
+
+[node name="dayTransitionLayer" type="CanvasLayer" parent="." unique_id=165833553]
+layer = 100
+visible = false
+
+[node name="transitionRect" type="ColorRect" parent="dayTransitionLayer" unique_id=1767885205]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="dayLabel" type="Label" parent="dayTransitionLayer/transitionRect" unique_id=692751938]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "DAY 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CareerUi" parent="." unique_id=906826242 instance=ExtResource("12_career")]
+visible = false
+
+[node name="InventoryUi" parent="." unique_id=989521622 instance=ExtResource("2_f5cxw")]
+visible = false
+
+[node name="DialogueUi" parent="." unique_id=1712816911 instance=ExtResource("101_dialogue")]
+visible = false
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/speedButton" to="." method="_on_speed_pressed"]

@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://bi433bwuph474"]
+
+[ext_resource type="Script" uid="uid://o3m3ub56fhwa" path="res://scripts/ui/ui.gd" id="1_xxv1x"]
+[ext_resource type="PackedScene" uid="uid://bq8v64h816uta" path="res://scenes/ui/inventoryUi.tscn" id="2_ka1d5"]
+[ext_resource type="StyleBox" path="res://asset/theme/progresbar_back.tres" id="StyleBoxFlat_pb_back"]
+[ext_resource type="StyleBox" path="res://asset/theme/progresbar_fill.tres" id="StyleBoxFlat_pb_fill"]
+
+[node name="ui" type="CanvasLayer" unique_id=894390005]
+script = ExtResource("1_xxv1x")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1304066792]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=44923575]
+layout_mode = 2
+
+[node name="dayLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=830931182]
+layout_mode = 2
+
+[node name="timeLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1385480538]
+layout_mode = 2
+
+[node name="moneyLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1719156399]
+layout_mode = 2
+
+[node name="speedButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1789286686]
+layout_mode = 2
+
+[node name="statusButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1340105056]
+layout_mode = 2
+text = "status"
+
+[node name="windows" type="Control" parent="." unique_id=18712871]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -106.0
+offset_top = -148.5
+offset_right = 106.0
+offset_bottom = 148.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="statusPanel" type="Panel" parent="windows" unique_id=90256647]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -108.0
+offset_top = -149.0
+offset_right = 108.0
+offset_bottom = 149.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="windows/statusPanel" unique_id=10029064]
+layout_mode = 0
+offset_left = 13.0
+offset_right = 200.0
+offset_bottom = 275.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="windows/statusPanel/MarginContainer" unique_id=1164599826]
+layout_mode = 2
+
+[node name="characterName" type="Label" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=438892566]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=1082128773]
+layout_mode = 2
+
+[node name="energyLabel" type="Label" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=474251885]
+layout_mode = 2
+
+[node name="energyBar" type="ProgressBar" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=1747931741]
+theme_override_styles/background = ExtResource("StyleBoxFlat_pb_back")
+theme_override_styles/fill = ExtResource("StyleBoxFlat_pb_fill")
+layout_mode = 2
+
+[node name="hungerLabel" type="Label" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=291950944]
+layout_mode = 2
+
+[node name="hungerBar" type="ProgressBar" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=2075672978]
+theme_override_styles/background = ExtResource("StyleBoxFlat_pb_back")
+theme_override_styles/fill = ExtResource("StyleBoxFlat_pb_fill")
+layout_mode = 2
+
+[node name="stressLabel" type="Label" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=579507194]
+layout_mode = 2
+
+[node name="stressBar" type="ProgressBar" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=1120215644]
+theme_override_styles/background = ExtResource("StyleBoxFlat_pb_back")
+theme_override_styles/fill = ExtResource("StyleBoxFlat_pb_fill")
+layout_mode = 2
+
+[node name="moodLabel" type="Label" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=1981508454]
+layout_mode = 2
+
+[node name="moodBar" type="ProgressBar" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=439956735]
+theme_override_styles/background = ExtResource("StyleBoxFlat_pb_back")
+theme_override_styles/fill = ExtResource("StyleBoxFlat_pb_fill")
+layout_mode = 2
+
+[node name="closeButton" type="Button" parent="windows/statusPanel/MarginContainer/VBoxContainer" unique_id=1367113988]
+layout_mode = 2
+text = "Tutup"
+
+[node name="InventoryUi" parent="." unique_id=190364648 instance=ExtResource("2_ka1d5")]
+offset_left = 123.0
+offset_top = 98.0
+offset_right = 1047.0
+offset_bottom = 545.0
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/speedButton" to="." method="_on_speed_pressed"]

@@ -1,0 +1,12 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://h5qnqmgs0d77"]
+
+[ext_resource type="Texture2D" uid="uid://cgb51wc8dhjpb" path="res://asset/art/other/menu2.png" id="1_xep4v"]
+
+[resource]
+texture = ExtResource("1_xep4v")
+texture_margin_top = 10.0
+texture_margin_bottom = 10.0
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0

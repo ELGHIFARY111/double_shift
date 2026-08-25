@@ -1,0 +1,88 @@
+{
+	"destinations":[
+		{
+			"id":"house",
+			"name":"Rumah",
+			"scene":"res://scenes/world/house.tscn",
+			"spawn_tile": {
+				"x": 3,
+				"y": 12
+			},
+			"travel_time":0,
+			"map_position": {
+				"x": 0,
+				"y": 0
+			}
+		},
+		{
+			"id":"toserba",
+			"name":"Toserba",
+			"scene":"res://scenes/world/toserba.tscn",
+			"spawn_tile": {
+				"x": 3,
+				"y": 12
+			},
+			"travel_time":15,
+			"map_position": {
+				"x": 3,
+				"y": 2
+			}
+		},
+		{
+			"id":"kantor",
+			"name":"Kantor",
+			"scene":"res://scenes/world/kantor.tscn",
+			"spawn_tile": {
+				"x": 3,
+				"y": 12
+			},
+			"travel_time":20,
+			"map_position": {
+				"x": 6,
+				"y": 1
+			}
+		},
+		{
+			"id":"toko_buku",
+			"name":"Toko Buku",
+			"scene":"res://scenes/world/toko_buku.tscn",
+			"spawn_tile": {
+				"x": 3,
+				"y": 12
+			},
+			"travel_time":18,
+			"map_position": {
+				"x": 4,
+				"y": 4
+			}
+		},
+		{
+			"id":"toko_furnitur",
+			"name":"Toko Furnitur",
+			"scene":"res://scenes/world/toko_furnitur.tscn",
+			"spawn_tile": {
+				"x": 3,
+				"y": 12
+			},
+			"travel_time":18,
+			"map_position": {
+				"x": 5,
+				"y": 3
+			}
+		},
+		{
+			"id":"sekolah",
+			"name":"Sekolah",
+			"scene":"res://scenes/world/sekolah.tscn",
+			"spawn_tile": {
+				"x": 3,
+				"y": 12
+			},
+			"travel_time":18,
+			"map_position": {
+				"x": 2,
+				"y": 6
+			}
+		}
+	]
+}

@@ -1,0 +1,280 @@
+[gd_scene format=4 uid="uid://bbxpovvkj8x71"]
+
+[ext_resource type="Texture2D" uid="uid://bnxrw5vag3ym5" path="res://asset/art/tiles/tilesgua.png" id="1_12j21"]
+[ext_resource type="Texture2D" uid="uid://cuui3emav8vfw" path="res://asset/art/tiles/Interior/Tile/floor1.png" id="1_44bws"]
+[ext_resource type="Script" uid="uid://danmwt0i1vowm" path="res://scripts/world/house/house.gd" id="1_yj2u4"]
+[ext_resource type="Texture2D" uid="uid://be23xqpf1dugq" path="res://asset/art/tiles/tiles1.png" id="3_oi0cb"]
+[ext_resource type="Texture2D" uid="uid://cqt5f2hxj8vyy" path="res://asset/art/tiles/temboktinggi.png" id="3_rvrsn"]
+[ext_resource type="Texture2D" uid="uid://bvj1tigv5mq3v" path="res://asset/art/tiles/dinding_jendela.png" id="4_357rb"]
+[ext_resource type="Texture2D" uid="uid://dpordo02njmb0" path="res://asset/art/tiles/tembok.png" id="5_rvrsn"]
+[ext_resource type="PackedScene" uid="uid://cs0ovowlixq8v" path="res://scenes/objects/bed.tscn" id="5_wusmn"]
+[ext_resource type="PackedScene" uid="uid://bq7qbbtua0h72" path="res://scenes/objects/washingMachine.tscn" id="6_mfwx6"]
+[ext_resource type="Texture2D" uid="uid://cfqjg3ji68dk7" path="res://asset/art/tiles/tiles2.png" id="6_oy0pf"]
+[ext_resource type="PackedScene" uid="uid://rmix5upureia" path="res://scenes/objects/tv.tscn" id="7_12j21"]
+[ext_resource type="PackedScene" uid="uid://2feebcwyw7wh" path="res://scenes/objects/stove.tscn" id="8_ycl3c"]
+[ext_resource type="PackedScene" uid="uid://1kipry8d78gk" path="res://scenes/objects/computer.tscn" id="9_j2j1c"]
+[ext_resource type="PackedScene" uid="uid://vv8srr8jpmbt" path="res://scenes/objects/door.tscn" id="9_mfwx6"]
+[ext_resource type="PackedScene" uid="uid://cg3d4iicnyvt3" path="res://scenes/objects/wastafel.tscn" id="14_lyc04"]
+[ext_resource type="Script" uid="uid://cen76uvqidqmj" path="res://scripts/world/room_visibility.gd" id="16_rf0sg"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_id8dw"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lyc04"]
+texture = ExtResource("5_rvrsn")
+texture_region_size = Vector2i(64, 128)
+3:1/0 = 0
+4:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, 8)
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rf0sg"]
+texture = ExtResource("3_rvrsn")
+texture_region_size = Vector2i(64, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, 8)
+0:1/0 = 0
+1:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gjm25"]
+texture = ExtResource("4_357rb")
+texture_region_size = Vector2i(64, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, 8)
+0:1/0 = 0
+1:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_34mhf"]
+tile_shape = 1
+tile_size = Vector2i(64, 32)
+sources/0 = SubResource("TileSetAtlasSource_lyc04")
+sources/1 = SubResource("TileSetAtlasSource_rf0sg")
+sources/2 = SubResource("TileSetAtlasSource_gjm25")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6qph"]
+texture = ExtResource("1_12j21")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j8ew6"]
+texture = ExtResource("3_oi0cb")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dd4p1"]
+texture = ExtResource("6_oy0pf")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ik07c"]
+texture = ExtResource("1_44bws")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_p5viw"]
+tile_shape = 1
+tile_size = Vector2i(64, 32)
+sources/4 = SubResource("TileSetAtlasSource_ik07c")
+sources/0 = SubResource("TileSetAtlasSource_q6qph")
+sources/1 = SubResource("TileSetAtlasSource_j8ew6")
+sources/2 = SubResource("TileSetAtlasSource_dd4p1")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lyc04"]
+size = Vector2(1.3465269, 1.8880463)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oopc8"]
+size = Vector2(3.5566168, 4.0414963)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rf0sg"]
+size = Vector2(1.9720021, 4.0414963)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gjm25"]
+size = Vector2(0.8859825, 4.0414963)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q6qph"]
+size = Vector2(0.6788971, 4.0414963)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j8ew6"]
+size = Vector2(1.3733147, 1.8880463)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dd4p1"]
+size = Vector2(0.25854063, 1.8880463)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ik07c"]
+size = Vector2(0.21012801, 1.8880463)
+
+[node name="house" type="Node2D" unique_id=1811493115]
+script = ExtResource("1_yj2u4")
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1967401704]
+navigation_polygon = SubResource("NavigationPolygon_id8dw")
+
+[node name="TileMapWall" type="TileMapLayer" parent="." unique_id=46747959]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD+//7/AQAAAAAAAAD+//3/AgAAAAAAAAD///z/AQAAAAAAAAD///v/AQAAAAAAAAAAAPr/AQAAAAAAAAABAPr/AQABAAAAAAABAPv/AQABAAAAAAACAPz/AQABAAAAAAACAP3/AgABAAAAAAADAP7/AQABAAAAAAADAP//AQABAAAAAAAEAAAAAQABAAAAAAAEAAEAAQABAAAAAAAFAAIAAQABAAAAAAAFAAMAAQABAAAAAAAGAAQAAQABAAAAAAAGAAUAAQABAAAAAAAHAAYAAQABAAAAAAAHAAcAAQABAAAAAAAIAAgAAQABAAAAAAAIAAkAAQABAAAAAAD9////AQAAAAAAAAA=")
+tile_set = SubResource("TileSet_34mhf")
+
+[node name="TileMapGround" type="TileMapLayer" parent="." unique_id=1917646430]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAAAAAAAAgAAAAAAAAAAAAEAAgAAAAAAAAABAAAAAgAAAAAAAAAAAP//AgAAAAAAAAD//wEAAgAAAAAAAAAAAAIAAgAAAAAAAAAAAAMAAgAAAAAAAAABAAIAAgAAAAAAAAABAAEAAgAAAAAAAAD//wMAAgAAAAAAAAAAAAQAAgAAAAAAAAABAAQAAQAAAAAAAAACAAIAAQAAAAAAAAABAAMAAQAAAAAAAAAAAAUAAQAAAAAAAAACAAMAAQAAAAAAAAACAAQAAQAAAAAAAAACAAUAAQAAAAAAAAACAAYAAQAAAAAAAAABAAUAAQAAAAAAAAABAAYAAQAAAAAAAAABAAcAAQAAAAAAAAADAAQAAQAAAAAAAAADAAIAAQAAAAAAAAADAAMAAQAAAAAAAAACAAEAAQAAAAAAAAACAAAAAgAAAAAAAAABAP//AgAAAAAAAAACAAgAAQAAAAAAAAACAAcAAQAAAAAAAAADAAYAAQAAAAAAAAADAAUAAQAAAAAAAAAEAAQAAQAAAAAAAAACAAkAAQAAAAAAAAADAAgAAQAAAAAAAAADAAcAAQAAAAAAAAAEAAYAAQAAAAAAAAAEAAUAAQAAAAAAAAAFAAYAAQAAAAAAAAAEAAcAAQAAAAAAAAAEAAgAAQAAAAAAAAADAAkAAQAAAAAAAAADAAoAAQAAAAAAAAACAAsAAQAAAAAAAAADAAsAAQAAAAAAAAAEAAoAAQAAAAAAAAAEAAsAAQAAAAAAAAAEAAkAAQAAAAAAAAAFAAgAAQAAAAAAAAAFAAcAAQAAAAAAAAAFAAoAAQAAAAAAAAAEAAwAAQAAAAAAAAABAP7/AgAAAAAAAAD//wIAAgAAAAAAAAACAAoAAQAAAAAAAAADAAwAAQAAAAAAAAAFAAkAAQAAAAAAAAAGAAgAAQAAAAAAAAAGAAkAAQAAAAAAAAAGAAoAAQAAAAAAAAAFAAsAAQAAAAAAAAAGAAwAAQAAAAAAAAAFAA0AAQAAAAAAAAAFAAwAAQAAAAAAAAAEAA0AAQAAAAAAAAAFAA4AAQAAAAAAAAAGAAsAAQAAAAAAAAAHAAoAAQAAAAAAAAAHAAsAAQAAAAAAAAAHAAwAAQAAAAAAAAAGAA0AAQAAAAAAAAAGAA4AAQAAAAAAAAAFAA8AAQAAAAAAAAAIAAoAAQAAAAAAAAAHAAkAAQAAAAAAAAAHAAgAAQAAAAAAAAAGAAcAAQAAAAAAAAAGAAYAAQAAAAAAAAAFAAUAAQAAAAAAAAAFAAQAAQAAAAAAAAAEAAMAAQAAAAAAAAAEAAIAAQAAAAAAAAADAAEAAQAAAAAAAAADAAAAAQAAAAAAAAACAP//AgAAAAAAAAACAP7/AgAAAAAAAAABAP3/AgAAAAAAAAD+/wEAAgAAAAAAAAD//wAAAgAAAAAAAAD/////AgAAAAAAAAAAAP7/AgAAAAAAAAD///3/AgAAAAAAAAAAAPz/AgAAAAAAAAAAAP3/AgAAAAAAAAAAAPv/AgAAAAAAAAABAPz/AgAAAAAAAAD///7/AgAAAAAAAAD+////AgAAAAAAAAD+/wAAAgAAAAAAAAA=")
+tile_set = SubResource("TileSet_p5viw")
+
+[node name="TileMapWall2" type="TileMapLayer" parent="." unique_id=31811631]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAACAP//AAAAAAAAAAACAAAAAAAAAAAAAAABAAEAAAAAAAAAAAABAAIAAAAAAAAAAAAAAAQAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_34mhf")
+
+[node name="TileMapWall3" type="TileMapLayer" parent="." unique_id=159893831]
+y_sort_enabled = true
+tile_set = SubResource("TileSet_34mhf")
+
+[node name="TileMapDecorations" type="TileMapLayer" parent="." unique_id=791162778]
+
+[node name="objects" type="Node2D" parent="." unique_id=1590535622]
+
+[node name="kasur" parent="objects" unique_id=1584118940 instance=ExtResource("5_wusmn")]
+position = Vector2(68, -68)
+prompt_text = "Interact"
+
+[node name="mesin_cuci" parent="objects" unique_id=1432754860 instance=ExtResource("6_mfwx6")]
+position = Vector2(316, 48)
+
+[node name="tv" parent="objects" unique_id=849628750 instance=ExtResource("7_12j21")]
+position = Vector2(261, 16)
+
+[node name="kompor" parent="objects" unique_id=1523158845 instance=ExtResource("8_ycl3c")]
+position = Vector2(350, 60)
+
+[node name="meja_belajar" parent="objects" unique_id=579298950 instance=ExtResource("9_j2j1c")]
+position = Vector2(132, -50)
+
+[node name="computer" parent="objects" unique_id=846842048 instance=ExtResource("9_j2j1c")]
+position = Vector2(192, 19)
+
+[node name="wastafel" parent="objects" unique_id=1774926553 instance=ExtResource("14_lyc04")]
+position = Vector2(449, 112)
+
+[node name="pintu" parent="." unique_id=2029152970 instance=ExtResource("9_mfwx6")]
+position = Vector2(191, 187)
+
+[node name="tembok" type="Node2D" parent="." unique_id=624615125]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tembok" unique_id=1186230891]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tembok/StaticBody2D" unique_id=42692476]
+position = Vector2(-31.262093, -33.403046)
+rotation = -0.4537856
+scale = Vector2(161.61623, -1.5978887)
+shape = SubResource("RectangleShape2D_lyc04")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="tembok/StaticBody2D" unique_id=657944148]
+position = Vector2(321.12772, 46.079624)
+rotation = 0.47123894
+scale = Vector2(161.61623, -1.5978887)
+shape = SubResource("RectangleShape2D_oopc8")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="tembok/StaticBody2D" unique_id=902628129]
+position = Vector2(11.906863, 89.86664)
+rotation = 0.47123894
+scale = Vector2(161.61623, -1.5978887)
+shape = SubResource("RectangleShape2D_rf0sg")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="tembok/StaticBody2D" unique_id=1324414730]
+position = Vector2(317.74316, 243.59758)
+rotation = 0.47123894
+scale = Vector2(161.61623, -1.5978887)
+shape = SubResource("RectangleShape2D_gjm25")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="tembok/StaticBody2D" unique_id=742294549]
+position = Vector2(173.62117, 203.18315)
+rotation = 0.47123894
+scale = Vector2(161.61623, -1.5978887)
+shape = SubResource("RectangleShape2D_q6qph")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="tembok/StaticBody2D" unique_id=743603690]
+position = Vector2(478.46347, 226.80199)
+rotation = -0.47123894
+scale = Vector2(161.61623, -1.5978886)
+shape = SubResource("RectangleShape2D_j8ew6")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="tembok/StaticBody2D" unique_id=31408359]
+position = Vector2(237.72006, 219.14262)
+rotation = -0.47123894
+scale = Vector2(161.61623, -1.5978886)
+shape = SubResource("RectangleShape2D_dd4p1")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="tembok/StaticBody2D" unique_id=2137037778]
+position = Vector2(142.99998, 167)
+rotation = -0.47123894
+scale = Vector2(161.61623, -1.5978886)
+shape = SubResource("RectangleShape2D_ik07c")
+
+[node name="room" type="Node2D" parent="." unique_id=563605714]
+
+[node name="kamar" type="Node2D" parent="room" unique_id=1927666819]
+
+[node name="kamarShadow" type="Polygon2D" parent="room/kamar" unique_id=680056620]
+color = Color(0.14901961, 0.14901961, 0.14901961, 0.7764706)
+polygon = PackedVector2Array(-129, -39, -126, 17, 26, 93, 27, 39, 219, -58, 64, -135)
+
+[node name="Area2D" type="Area2D" parent="room/kamar" unique_id=2009187113]
+script = ExtResource("16_rf0sg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="room/kamar/Area2D" unique_id=840126842]
+polygon = PackedVector2Array(25, 91, 217, -4, 66, -82, -128, 16)

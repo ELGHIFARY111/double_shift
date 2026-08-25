@@ -1,0 +1,134 @@
+[gd_scene format=3 uid="uid://bx3hg34yamycx"]
+
+[ext_resource type="Script" uid="uid://d2ujlj40cy0h3" path="res://scripts/ui/cookingUi.gd" id="1_cooking"]
+[ext_resource type="PackedScene" path="res://scenes/ui/cookingSlotUi.tscn" id="2_slot"]
+[ext_resource type="PackedScene" path="res://scenes/ui/cookingQueueSlotUi.tscn" id="3_qslot"]
+[ext_resource type="Texture2D" uid="uid://bi1a1w568h64k" path="res://asset/art/other/board2.png" id="board2_tex_bg"]
+
+[node name="CookingUi" type="NinePatchRect" unique_id=853669324]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = -40.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("board2_tex_bg")
+region_rect = Rect2(0, 0, 256, 256)
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+script = ExtResource("1_cooking")
+slot_scene = ExtResource("2_slot")
+queue_slot_scene = ExtResource("3_qslot")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=698934339]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=60213841]
+layout_mode = 2
+
+[node name="header" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=252872244]
+layout_mode = 2
+
+[node name="titleLabel" type="Label" parent="MarginContainer/VBoxContainer/header" unique_id=2113609898]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Memasak"
+
+[node name="closeButton" type="Button" parent="MarginContainer/VBoxContainer/header" unique_id=1610525203]
+layout_mode = 2
+text = "X"
+
+[node name="body" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=919360414]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="leftPanel" type="VBoxContainer" parent="MarginContainer/VBoxContainer/body" unique_id=780457728]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/body/leftPanel" unique_id=1542161038]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/body/leftPanel/ScrollContainer" unique_id=415089578]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="rightPanel" type="Panel" parent="MarginContainer/VBoxContainer/body" unique_id=1484002692]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/body/rightPanel" unique_id=724717651]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer" unique_id=1995458598]
+layout_mode = 2
+
+[node name="recipeName" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=1325341798]
+layout_mode = 2
+text = "Pilih Resep"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=1038797138]
+layout_mode = 2
+
+[node name="ingredientsLabel" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=36161888]
+layout_mode = 2
+text = "Bahan yang dibutuhkan:"
+
+[node name="ingredientsList" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=514231938]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=1483575854]
+layout_mode = 2
+
+[node name="resultLabel" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=959675873]
+layout_mode = 2
+text = "Hasil:"
+
+[node name="cookTimeLabel" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=366348386]
+layout_mode = 2
+text = "Waktu: 0 Menit"
+
+[node name="cookButton" type="Button" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=1956242477]
+layout_mode = 2
+disabled = true
+text = "Masak"
+
+[node name="queuePanel" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=265223961]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/queuePanel" unique_id=1521586951]
+layout_mode = 2
+vertical_scroll_mode = 0
+
+[node name="queueContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/queuePanel/ScrollContainer" unique_id=1019392090]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bq7qbbtua0h72"]
+
+[ext_resource type="Texture2D" uid="uid://cld8jrqjj716h" path="res://asset/art/objects/washingMachine.png" id="1_3xg8x"]
+[ext_resource type="Script" uid="uid://bxmddejm50twg" path="res://scripts/objects/washingMachine.gd" id="1_n37it"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nhkbj"]
+radius = 39.04
+
+[node name="mesin_cuci" type="Area2D" unique_id=1584118940]
+script = ExtResource("1_n37it")
+id = "mesin_cuci"
+prompt_text = "Mesin Cuci"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=629607297]
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("1_3xg8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=652322644]
+shape = SubResource("CircleShape2D_nhkbj")

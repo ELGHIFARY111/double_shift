@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cs0ovowlixq8v"]
+
+[ext_resource type="Script" uid="uid://dcfe5s2m7fbt8" path="res://scripts/objects/bed.gd" id="1_jx3i1"]
+[ext_resource type="Texture2D" uid="uid://debo5aree1lph" path="res://asset/art/objects/bed.png" id="1_us1fn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nhkbj"]
+radius = 39.20459
+
+[node name="kasur" type="Area2D" unique_id=1584118940]
+script = ExtResource("1_jx3i1")
+id = "kasur"
+prompt_text = "kasur"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=629607297]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_us1fn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=652322644]
+shape = SubResource("CircleShape2D_nhkbj")

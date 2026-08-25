@@ -1,0 +1,261 @@
+[gd_scene format=3 uid="uid://3jnwcroxxqvm"]
+
+[ext_resource type="Script" uid="uid://dnnkqtc6exh03" path="res://scripts/menu/mainMenu.gd" id="1_kwvgq"]
+[ext_resource type="Theme" uid="uid://bdwfj46lfyv81" path="res://asset/theme/font_theme.tres" id="1_yvwhx"]
+[ext_resource type="PackedScene" uid="uid://dmixhkaop3jlx" path="res://scenes/menu/saveCard.tscn" id="2_60uub"]
+[ext_resource type="StyleBox" uid="uid://cd8kf0e488pyu" path="res://asset/theme/menu1.tres" id="3_46wf3"]
+[ext_resource type="StyleBox" uid="uid://h5qnqmgs0d77" path="res://asset/theme/menu2.tres" id="4_yvwhx"]
+
+[node name="MainMenu" type="Control" unique_id=2022163806]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_yvwhx")
+script = ExtResource("1_kwvgq")
+save_card_scene = ExtResource("2_60uub")
+
+[node name="backgorund" type="TextureRect" parent="." unique_id=857003039]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="fade" type="ColorRect" parent="." unique_id=742452785]
+z_index = -2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0.078431375)
+
+[node name="CenterContainer" type="MarginContainer" parent="." unique_id=739000942]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 400.0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=528799860]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="title" type="Label" parent="CenterContainer/VBoxContainer" unique_id=529581709]
+layout_mode = 2
+text = "JEFRI X KIKI"
+
+[node name="subTitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=282093927]
+layout_mode = 2
+text = "life simulation"
+
+[node name="continue" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1271027582]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = ExtResource("3_46wf3")
+theme_override_styles/pressed = ExtResource("3_46wf3")
+theme_override_styles/hover = ExtResource("4_yvwhx")
+text = "Lanjutkan Game"
+
+[node name="newGameButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1359302045]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = ExtResource("3_46wf3")
+theme_override_styles/pressed = ExtResource("3_46wf3")
+theme_override_styles/hover = ExtResource("4_yvwhx")
+text = "Game Baru"
+
+[node name="loadGameButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1861992057]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = ExtResource("3_46wf3")
+theme_override_styles/pressed = ExtResource("3_46wf3")
+theme_override_styles/hover = ExtResource("4_yvwhx")
+text = "Muat Game"
+
+[node name="settingButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=822969942]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = ExtResource("3_46wf3")
+theme_override_styles/pressed = ExtResource("3_46wf3")
+theme_override_styles/hover = ExtResource("4_yvwhx")
+text = "Pengaturan"
+
+[node name="exitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=822872455]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = ExtResource("3_46wf3")
+theme_override_styles/pressed = ExtResource("3_46wf3")
+theme_override_styles/hover = ExtResource("4_yvwhx")
+text = "Keluar"
+
+[node name="saveListPanel" type="Panel" parent="." unique_id=639699730]
+custom_minimum_size = Vector2(800, 0)
+custom_maximum_size = Vector2(-1, 500)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="saveListPanel" unique_id=1306667785]
+custom_minimum_size = Vector2(750, 0)
+custom_maximum_size = Vector2(-1, 450)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -60.5
+offset_right = 60.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="saveListPanel/MarginContainer" unique_id=1120418623]
+layout_mode = 2
+
+[node name="header" type="HBoxContainer" parent="saveListPanel/MarginContainer/VBoxContainer" unique_id=847403709]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="saveListPanel/MarginContainer/VBoxContainer/header" unique_id=1357677765]
+layout_mode = 2
+text = "save game list"
+
+[node name="backButton" type="Button" parent="saveListPanel/MarginContainer/VBoxContainer/header" unique_id=2063127971]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+text = "Kembali"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="saveListPanel/MarginContainer/VBoxContainer" unique_id=2014676274]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="saveList" type="VBoxContainer" parent="saveListPanel/MarginContainer/VBoxContainer/ScrollContainer" unique_id=642460057]
+custom_minimum_size = Vector2(0, 500)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="saveListPanel/MarginContainer/VBoxContainer" unique_id=2130312432]
+custom_minimum_size = Vector2(0, 50)
+propagate_maximum_size = false
+layout_mode = 2
+
+[node name="playButton" type="Button" parent="saveListPanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1701178729]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Mainkan"
+
+[node name="newGamePanel" type="Panel" parent="." unique_id=132876254]
+custom_minimum_size = Vector2(500, 0)
+custom_maximum_size = Vector2(-1, 250)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="newGamePanel" unique_id=619501095]
+custom_maximum_size = Vector2(-1, 220)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -34.5
+offset_right = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="newGamePanel/MarginContainer" unique_id=971100913]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="newGamePanel/MarginContainer/VBoxContainer" unique_id=406183931]
+layout_mode = 2
+text = "Mulai Game Baru"
+horizontal_alignment = 1
+
+[node name="saveName" type="LineEdit" parent="newGamePanel/MarginContainer/VBoxContainer" unique_id=1289470376]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_vertical = 10
+placeholder_text = "Masukkan nama game..."
+
+[node name="HBoxContainer" type="HBoxContainer" parent="newGamePanel/MarginContainer/VBoxContainer" unique_id=112927809]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+theme_override_constants/separation = 16
+
+[node name="createButton" type="Button" parent="newGamePanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=412975591]
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+text = "Mulai"
+
+[node name="cancelButton" type="Button" parent="newGamePanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1448490213]
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+text = "Batalkan"
+
+[node name="deleteDialog" type="ConfirmationDialog" parent="." unique_id=215992975]
+oversampling_override = 1.0
+title = "Hapus"
+initial_position = 3
+size = Vector2i(300, 150)
+current_screen = 0
+visible = true
+ok_button_text = "Hapus"
+dialog_text = "Hapus save ini?"
+cancel_button_text = "Batalkan"
+
+[node name="renameDialog" type="ConfirmationDialog" parent="." unique_id=645569033]
+oversampling_override = 1.0
+title = "Ganti Nama"
+initial_position = 3
+size = Vector2i(300, 150)
+current_screen = 0
+visible = true
+ok_button_text = "Setuju"
+cancel_button_text = "Batalkan"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="renameDialog" unique_id=959259787]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -67.0
+offset_right = -8.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="renameDialog/VBoxContainer" unique_id=1621250613]
+layout_mode = 2
+text = "Ganti nama save ini?"
+
+[node name="nameEdit" type="LineEdit" parent="renameDialog/VBoxContainer" unique_id=315585166]
+custom_minimum_size = Vector2(0, 55.52)
+custom_maximum_size = Vector2(-1, 40)
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 10
+placeholder_text = "Masukkan nama baru..."

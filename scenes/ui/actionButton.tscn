@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://8w3ya8knhprr"]
+
+[ext_resource type="Script" uid="uid://caagct0n2aubn" path="res://scripts/ui/actionButton.gd" id="1_n35fm"]
+
+[node name="ActionButton" type="Button" unique_id=1747546981]
+custom_maximum_size = Vector2(150, -1)
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+script = ExtResource("1_n35fm")

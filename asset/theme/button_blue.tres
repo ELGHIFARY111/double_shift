@@ -1,0 +1,8 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://bf7dftt4ewnpc"]
+
+[ext_resource type="Texture2D" uid="uid://cdhr67jv7stao" path="res://asset/art/other/nutton1.png" id="1_3f5oo"]
+
+[resource]
+texture = ExtResource("1_3f5oo")
+texture_margin_top = 8.0
+texture_margin_bottom = 8.0

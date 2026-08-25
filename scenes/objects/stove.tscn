@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://2feebcwyw7wh"]
+
+[ext_resource type="Script" uid="uid://d3bn8u66e7l12" path="res://scripts/objects/stove.gd" id="1_qdgw4"]
+[ext_resource type="Texture2D" uid="uid://bjh5aad2kq8vx" path="res://asset/art/objects/kompor1.png" id="2_bumrm"]
+[ext_resource type="Texture2D" uid="uid://cq6irl3se1jje" path="res://asset/art/objects/komorMasak-Sheet.png" id="3_quf57"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nhkbj"]
+radius = 39.09
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7u2d5"]
+atlas = ExtResource("3_quf57")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e3q3n"]
+atlas = ExtResource("3_quf57")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bumrm"]
+atlas = ExtResource("3_quf57")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynuuj"]
+atlas = ExtResource("3_quf57")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qdgw4"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7u2d5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e3q3n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bumrm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynuuj")
+}],
+"loop": 1,
+"name": &"kompor",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"new_animation_1",
+"speed": 5.0
+}]
+
+[node name="kompor" type="Area2D" unique_id=1584118940]
+script = ExtResource("1_qdgw4")
+id = "kompor"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=629607297]
+texture = ExtResource("2_bumrm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=652322644]
+shape = SubResource("CircleShape2D_nhkbj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=713571416]
+sprite_frames = SubResource("SpriteFrames_qdgw4")
+animation = &"kompor"

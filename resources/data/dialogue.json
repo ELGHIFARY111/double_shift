@@ -1,0 +1,20 @@
+{
+	"dialogues":[
+		{
+			"id":"pak_budi",
+			"text":"Halo, selamat datang di Toserba! Silakan lihat-lihat, barang kami lengkap lho."
+		},
+		{
+			"id":"bu_sinta",
+			"text":"Selamat datang di Toko Buku. Ingat, membaca itu jendela dunia! Ada buku yang dicari?"
+		},
+		{
+			"id":"pak_hadi",
+			"text":"Halo! Butuh furnitur untuk rumah barumu? Kualitas terjamin dan harga terjangkau!"
+		},
+		{
+			"id":"pak_rahmat",
+			"text":"Selamat datang di kantor. Kami mengurus administrasi dan rekrutmen. Silakan cek Job Portal di komputer rumahmu untuk lowongan terbaru."
+		}
+	]
+}

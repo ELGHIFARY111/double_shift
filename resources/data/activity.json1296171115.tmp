@@ -1,0 +1,66 @@
+{
+	"activity" : [
+		{
+			"id": "sleep",
+			"name": "Tidur",
+			"duration": 480,
+			"energy": 60,
+			"hunger": -10,
+			"stress": -20,
+			"mood": 5,
+			"money": 0,
+			"skill": null,
+			"skill_exp": 0
+		},
+
+		{
+			"id": "cook",
+			"name": "Memasak",
+			"duration": 30,
+			"energy": -5,
+			"hunger": 30,
+			"stress": 0,
+			"mood": 3,
+			"money": 0,
+			"skill": "cooking",
+			"skill_exp": 2
+		},
+		{
+			"id": "work",
+			"name": "Bekerja",
+			"duration": 240,
+			"energy": -35,
+			"hunger": -20,
+			"stress": 25,
+			"mood": -10,
+			"money": 500,
+			"skill": null,
+			"skill_exp": 0
+		},
+		{
+			"id": "wash_clothes",
+			"name": "Mencuci Pakaian",
+			"duration": 45,
+			"energy": -8,
+			"hunger": -3,
+			"stress": -2,
+			"mood": 2,
+			"money": 0,
+			"skill": null,
+			"skill_exp": 0
+		},
+
+		{
+			"id": "clean_room",
+			"name": "Membersihkan Kamar",
+			"duration": 30,
+			"energy": -5,
+			"hunger": -2,
+			"stress": -5,
+			"mood": 5,
+			"money": 0,
+			"skill": null,
+			"skill_exp": 0
+		}
+	]
+}

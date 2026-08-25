@@ -1,0 +1,8 @@
+[gd_resource type="Theme" format=3 uid="uid://bdwfj46lfyv81"]
+
+[ext_resource type="FontFile" uid="uid://b8kqsq338nluc" path="res://asset/font/pyxeltap/pixeltype/Pixeltype.ttf" id="1_qca06"]
+
+[resource]
+default_base_scale = 2.0
+default_font = ExtResource("1_qca06")
+default_font_size = 30

@@ -1,0 +1,126 @@
+{
+	"version": 1,
+	"player": {
+		"money": 3000000,
+		"day": 1,
+		"time": {
+			"hour": 6,
+			"minute": 0
+		},
+		"inventory": [
+			{
+				"item_id": "beras",
+				"amount": 5
+			},
+			{
+				"item_id": "telur",
+				"amount": 10
+			}
+		],
+		"family_hygiene": 100,
+		"family_burden": {
+			"kiki": 10,
+			"jefri": 10
+		},
+		"furniture": {
+			"kasur": 0,
+			"kompor": 0,
+			"mesin_cuci": 0,
+			"lemari": 0,
+			"meja_belajar": 0,
+			"kursi_belajar": 0
+		},
+		"characters": {
+			"kiki": {
+				"name": "kiki",
+				"map": "house",
+				"tile_position": {
+					"x": 2,
+					"y": 5
+				},
+				"stats": {
+					"energy": 100,
+					"hunger": 100,
+					"stress": 0
+				},
+				"skills": {
+					"programming": 0,
+					"cooking": 0,
+					"communication": 0,
+					"discipline": 0,
+					"computer": 0
+				},
+				"job": {
+					"current_job": ""
+				},
+				"activity": {
+					"current_activity": "",
+					"time_left": 0,
+					"duration": 0,
+					"target": "",
+					"origin": ""
+				}
+			},
+			"jefri": {
+				"name": "Jefri",
+				"map": "house",
+				"tile_position": {
+					"x": 0,
+					"y": 3
+				},
+				"stats": {
+					"energy": 100,
+					"hunger": 100,
+					"stress": 0
+				},
+				"skills": {
+					"programming": 0,
+					"cooking": 0,
+					"communication": 0,
+					"discipline": 0,
+					"computer": 0
+				},
+				"job": {
+					"current_job": ""
+				},
+				"activity": {
+					"current_activity": "",
+					"time_left": 0,
+					"duration": 0,
+					"target": "",
+					"origin": ""
+				}
+			},
+			"wildan": {
+				"name": "Wildan",
+				"map": "house",
+				"tile_position": {
+					"x": 3,
+					"y": 4
+				},
+				"stats": {
+					"energy": 100,
+					"hunger": 100,
+					"stress": 0
+				},
+				"skills": {
+					"programming": 0,
+					"cooking": 0,
+					"communication": 0,
+					"discipline": 0,
+					"computer": 0
+				},
+				"job": {
+					"current_job": ""
+				},
+				"activity": {
+					"current_activity": "",
+					"time_left": 0,
+					"duration": 0,
+					"target": "",
+					"origin": ""
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://1kipry8d78gk"]
+
+[ext_resource type="Script" uid="uid://cmmwviajx1utb" path="res://scripts/objects/computer.gd" id="1_jgubl"]
+[ext_resource type="Texture2D" uid="uid://ckjy4sm4ia6e0" path="res://asset/art/objects/computer.png" id="1_nhgpl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nhkbj"]
+radius = 39.04
+
+[node name="computer" type="Area2D" unique_id=1584118940]
+script = ExtResource("1_jgubl")
+id = "komputer"
+prompt_text = "komputer"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=629607297]
+scale = Vector2(0.21, 0.21)
+texture = ExtResource("1_nhgpl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=652322644]
+shape = SubResource("CircleShape2D_nhkbj")

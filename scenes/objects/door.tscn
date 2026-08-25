@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://vv8srr8jpmbt"]
+
+[ext_resource type="Script" uid="uid://tm2tysm8yweo" path="res://scripts/objects/door.gd" id="1_uw3m6"]
+[ext_resource type="Texture2D" uid="uid://debo5aree1lph" path="res://asset/art/objects/bed.png" id="2_xm0wp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nhkbj"]
+radius = 39.20459
+
+[node name="pintu" type="Area2D" unique_id=1584118940]
+script = ExtResource("1_uw3m6")
+id = "pintu"
+prompt_text = "pintu"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=629607297]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_xm0wp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=652322644]
+shape = SubResource("CircleShape2D_nhkbj")

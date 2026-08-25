@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dv4g6fje4yfby"]
+
+[ext_resource type="Script" uid="uid://dt30oftqftney" path="res://scripts/main/main.gd" id="1_k2fmo"]
+[ext_resource type="PackedScene" uid="uid://cguvgpkg504bu" path="res://scenes/ui/ui.tscn" id="4_l3cfh"]
+
+[node name="main" type="Node2D" unique_id=1709832859]
+script = ExtResource("1_k2fmo")
+
+[node name="WorldRoot" type="Node2D" parent="." unique_id=1025866403]
+
+[node name="CharacterLayer" type="Node2D" parent="." unique_id=1718050387]
+
+[node name="debug" type="Node2D" parent="." unique_id=693069807]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=368644123]
+zoom = Vector2(3, 3)
+
+[node name="Ui" parent="." unique_id=894390005 instance=ExtResource("4_l3cfh")]

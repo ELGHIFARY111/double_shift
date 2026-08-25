@@ -1,0 +1,868 @@
+{
+	"version": 1,
+	"author": "ELsemeluhuy",
+	"last_update": "2026-07-22",
+	"items": [
+		{
+			"id": "air_mineral",
+			"item_name": "Air Mineral",
+			"description": "Air Mineral bisa digunakan.",
+			"category": "makanan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 3000,
+			"sell_price": 500,
+			"sellable": true,
+			"consumable": true,
+			"max_stack": 99,
+			"effects": {
+				"energy": 5,
+				"hunger": 5,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "roti",
+			"item_name": "Roti",
+			"description": "Roti bisa digunakan.",
+			"category": "makanan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 6000,
+			"sell_price": 1000,
+			"sellable": true,
+			"consumable": true,
+			"max_stack": 99,
+			"effects": {
+				"energy": 8,
+				"hunger": 15,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "nasi_putih",
+			"item_name": "Nasi Putih",
+			"description": "Nasi Putih bisa digunakan.",
+			"category": "makanan",
+			"obtain_type": [
+                "cooking"
+			],
+			"buy_price": 0,
+			"sell_price": 1000,
+			"sellable": true,
+			"consumable": true,
+			"max_stack": 99,
+			"effects": {
+				"energy": 10,
+				"hunger": 35,
+				"stress": -1
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "telur_dadar",
+			"item_name": "Telur Dadar",
+			"description": "Telur Dadar bisa digunakan.",
+			"category": "makanan",
+			"obtain_type": [
+                "cooking"
+			],
+			"buy_price": 0,
+			"sell_price": 1500,
+			"sellable": true,
+			"consumable": true,
+			"max_stack": 99,
+			"effects": {
+				"energy": 12,
+				"hunger": 25,
+				"stress": -2
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "nasi_goreng",
+			"item_name": "Nasi Goreng",
+			"description": "Nasi Goreng bisa digunakan.",
+			"category": "makanan",
+			"obtain_type": [
+                "cooking"
+			],
+			"buy_price": 0,
+			"sell_price": 2200,
+			"sellable": true,
+			"consumable": true,
+			"max_stack": 99,
+			"effects": {
+				"energy": 20,
+				"hunger": 45,
+				"stress": -5
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "mie_goreng",
+			"item_name": "Mi Goreng",
+			"description": "Mi Goreng bisa digunakan.",
+			"category": "makanan",
+			"obtain_type": [
+                "cooking"
+			],
+			"buy_price": 0,
+			"sell_price": 2000,
+			"sellable": true,
+			"consumable": true,
+			"max_stack": 99,
+			"effects": {
+				"energy": 18,
+				"hunger": 40,
+				"stress": -4
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "ayam_goreng",
+			"item_name": "Ayam Goreng",
+			"description": "Ayam Goreng bisa digunakan.",
+			"category": "makanan",
+			"obtain_type": [
+                "cooking"
+			],
+			"buy_price": 0,
+			"sell_price": 2800,
+			"sellable": true,
+			"consumable": true,
+			"max_stack": 99,
+			"effects": {
+				"energy": 25,
+				"hunger": 50,
+				"stress": -6
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "steak",
+			"item_name": "Steak",
+			"description": "Steak bisa digunakan.",
+			"category": "makanan",
+			"obtain_type": [
+                "cooking"
+			],
+			"buy_price": 0,
+			"sell_price": 4000,
+			"sellable": true,
+			"consumable": true,
+			"max_stack": 99,
+			"effects": {
+				"energy": 35,
+				"hunger": 65,
+				"stress": -8
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "sup_ayam",
+			"item_name": "Sup Ayam",
+			"description": "Sup Ayam bisa digunakan.",
+			"category": "makanan",
+			"obtain_type": [
+                "cooking"
+			],
+			"buy_price": 0,
+			"sell_price": 2500,
+			"sellable": true,
+			"consumable": true,
+			"max_stack": 99,
+			"effects": {
+				"energy": 18,
+				"hunger": 40,
+				"stress": -6
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "kopi",
+			"item_name": "kopi",
+			"description": "kopi bisa digunakan.",
+			"category": "makanan",
+			"obtain_type": [
+                "cooking"
+			],
+			"buy_price": 0,
+			"sell_price": 1200,
+			"sellable": true,
+			"consumable": true,
+			"max_stack": 99,
+			"effects": {
+				"energy": 20,
+				"hunger": 0,
+				"stress": -8
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "teh",
+			"item_name": "Teh",
+			"description": "Teh bisa digunakan.",
+			"category": "makanan",
+			"obtain_type": [
+                "cooking"
+			],
+			"buy_price": 0,
+			"sell_price": 800,
+			"sellable": true,
+			"consumable": true,
+			"max_stack": 99,
+			"effects": {
+				"energy": 8,
+				"hunger": 0,
+				"stress": -3
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "beras",
+			"item_name": "Beras",
+			"description": "Beras bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 3000,
+			"sell_price": 100,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "telur",
+			"item_name": "Telur",
+			"description": "Telur bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 1500,
+			"sell_price": 100,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "daging_ayam",
+			"item_name": "Daging Ayam",
+			"description": "Daging Ayam bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 12000,
+			"sell_price": 2000,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "daging_sapi",
+			"item_name": "Daging Sapi",
+			"description": "Daging Sapi bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 15000,
+			"sell_price": 2000,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "mi_instan",
+			"item_name": "Mi Instan",
+			"description": "Mi Instan bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 3000,
+			"sell_price": 100,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "ikan",
+			"item_name": "Ikan",
+			"description": "Ikan bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 7500,
+			"sell_price": 100,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "minyak_goreng",
+			"item_name": "Minyak Goreng",
+			"description": "Minyak Goreng bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 2000,
+			"sell_price": 100,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "garam",
+			"item_name": "Garam",
+			"description": "Garam bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 1000,
+			"sell_price": 100,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "gula",
+			"item_name": "Gula",
+			"description": "Gula bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 1000,
+			"sell_price": 100,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "bawang_merah",
+			"item_name": "Bawang Merah",
+			"description": "Bawang Merah bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 500,
+			"sell_price": 100,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "bawang_putih",
+			"item_name": "Bawang Putih",
+			"description": "Bawang Putih bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 500,
+			"sell_price": 100,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "teh_bungkus",
+			"item_name": "Teh Bungkus",
+			"description": "Teh Bungkus bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 900,
+			"sell_price": 100,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "tomat",
+			"item_name": "Tomat",
+			"description": "Tomat bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 600,
+			"sell_price": 200,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "wortel",
+			"item_name": "Wortel",
+			"description": "Wortel bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 700,
+			"sell_price": 200,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "kentang",
+			"item_name": "Kentang",
+			"description": "Kentang bisa digunakan.",
+			"category": "bahan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 500,
+			"sell_price": 100,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "vitamin",
+			"item_name": "Vitamin",
+			"description": "Vitamin bisa digunakan.",
+			"category": "obat",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 7000,
+			"sell_price": 500,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 20,
+			"effects": {
+				"energy": 20,
+				"hunger": 0,
+				"stress": -5
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "obat_flu",
+			"item_name": "Obat Flu",
+			"description": "Obat Flu bisa digunakan.",
+			"category": "obat",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 6000,
+			"sell_price": 300,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 20,
+			"effects": {
+				"energy": 10,
+				"hunger": 0,
+				"stress": -10
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "obat_pereda_nyeri",
+			"item_name": "Obat Pereda Nyeri",
+			"description": "Obat Pereda Nyeri bisa digunakan.",
+			"category": "obat",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 8500,
+			"sell_price": 250,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 20,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": -20
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "buku_memasak",
+			"item_name": "Buku Memasak",
+			"description": "Buku Memasak bisa digunakan.",
+			"category": "buku",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 15000,
+			"sell_price": 0,
+			"sellable": false,
+			"consumable": false,
+			"max_stack": 1,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "buku_pemrograman",
+			"item_name": "Buku Pemrograman",
+			"description": "Buku Pemrograman bisa digunakan.",
+			"category": "buku",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 16000,
+			"sell_price": 0,
+			"sellable": false,
+			"consumable": false,
+			"max_stack": 1,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "buku_desain",
+			"item_name": "Buku Desain",
+			"description": "Buku Desain bisa digunakan.",
+			"category": "buku",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 17000,
+			"sell_price": 0,
+			"sellable": false,
+			"consumable": false,
+			"max_stack": 1,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "buku_bisnis",
+			"item_name": "Buku Bisnis",
+			"description": "Buku Bisnis bisa digunakan.",
+			"category": "buku",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 12000,
+			"sell_price": 0,
+			"sellable": false,
+			"consumable": false,
+			"max_stack": 1,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "sapu",
+			"item_name": "Sapu",
+			"description": "Sapu bisa digunakan.",
+			"category": "peralatan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 6000,
+			"sell_price": 0,
+			"sellable": false,
+			"consumable": false,
+			"max_stack": 1,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "pel",
+			"item_name": "Pel",
+			"description": "Pel bisa digunakan.",
+			"category": "peralatan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 7000,
+			"sell_price": 0,
+			"sellable": false,
+			"consumable": false,
+			"max_stack": 1,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "obeng",
+			"item_name": "Obeng",
+			"description": "Obeng bisa digunakan.",
+			"category": "peralatan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 12000,
+			"sell_price": 0,
+			"sellable": false,
+			"consumable": false,
+			"max_stack": 1,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "palu",
+			"item_name": "Palu",
+			"description": "Palu bisa digunakan.",
+			"category": "peralatan",
+			"obtain_type": [
+                "shop"
+			],
+			"buy_price": 13000,
+			"sell_price": 0,
+			"sellable": false,
+			"consumable": false,
+			"max_stack": 1,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": "toserba"
+		},
+		{
+			"id": "kunci_rumah",
+			"item_name": "Kunci Rumah",
+			"description": "Kunci Rumah bisa digunakan.",
+			"category": "spesial",
+			"obtain_type": [
+                "quest"
+			],
+			"buy_price": 0,
+			"sell_price": 0,
+			"sellable": false,
+			"consumable": false,
+			"max_stack": 3,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "surat",
+			"item_name": "Surat",
+			"description": "Surat bisa digunakan.",
+			"category": "spesial",
+			"obtain_type": [
+                "quest"
+			],
+			"buy_price": 0,
+			"sell_price": 0,
+			"sellable": false,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "tiket",
+			"item_name": "Tiket",
+			"description": "Tiket bisa digunakan.",
+			"category": "spesial",
+			"obtain_type": [
+                "event"
+			],
+			"buy_price": 0,
+			"sell_price": 0,
+			"sellable": false,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		},
+		{
+			"id": "kotak_hadiah",
+			"item_name": "Kotak Hadiah",
+			"description": "Kotak Hadiah bisa digunakan.",
+			"category": "spesial",
+			"obtain_type": [
+                "event"
+			],
+			"buy_price": 0,
+			"sell_price": 5000,
+			"sellable": true,
+			"consumable": false,
+			"max_stack": 99,
+			"effects": {
+				"energy": 0,
+				"hunger": 0,
+				"stress": 0
+			},
+			"icon": "res://asset/art/itemsIcon/egg.png",
+			"shop": ""
+		}
+	]
+}

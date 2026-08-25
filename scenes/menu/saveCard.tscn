@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://dmixhkaop3jlx"]
+
+[ext_resource type="Script" uid="uid://cca8g6k24l1wa" path="res://scripts/menu/saveCard.gd" id="1_r0phu"]
+
+[node name="SaveCard" type="Panel" unique_id=66165063]
+custom_minimum_size = Vector2(700, 70)
+custom_maximum_size = Vector2(-1, 120)
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_r0phu")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=103140852]
+custom_maximum_size = Vector2(650, -1)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -52.0
+offset_bottom = 52.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1373973971]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1170237772]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+
+[node name="saveName" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1559388845]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "sdd"
+
+[node name="dayLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1210716143]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "sdsds"
+
+[node name="moneyLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1771308846]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "ddsdsd"
+
+[node name="lastPlayed" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=745986570]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "sdsdsdsdsds"
+
+[node name="Control" type="Control" parent="MarginContainer/HBoxContainer" unique_id=1381465839]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=973408920]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="renameButton" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer2" unique_id=985135802]
+layout_mode = 2
+text = "Ganti Nama"
+
+[node name="deleteButton" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1510209678]
+layout_mode = 2
+text = "Hapus"
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer2/renameButton" to="." method="_on_rename_button_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer2/deleteButton" to="." method="_on_delete_button_pressed"]

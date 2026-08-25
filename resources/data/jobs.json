@@ -1,0 +1,65 @@
+{
+	"version": 1,
+	"author": "ELsemeluhuy",
+	"last_update": "2026-07-28",
+
+	"jobs": [
+		{
+			"id": "cleaning_service",
+			"name": "Cleaning Service",
+			"description": "Menjaga kebersihan kantor.",
+			"salary_min": 18000,
+			"salary_max": 25000,
+			"work_duration": 240,
+			"required_skill": {}
+		},
+
+		{
+			"id": "office_boy",
+			"name": "Office Boy",
+			"description": "Membantu kebutuhan operasional kantor.",
+			"salary_min": 28000,
+			"salary_max": 35000,
+			"work_duration": 240,
+			"required_skill": {
+					"discipline": 15
+				}
+		},
+		{
+			"id": "admin",
+			"name": "Admin Kantor",
+			"description": "Mengelola data dan dokumen kantor.",
+			"salary_min": 50000,
+			"salary_max": 70000,
+			"work_duration": 240,
+			"required_skill": {
+					"computer": 10,
+					"programming": 5
+				}
+		},
+
+		{
+			"id": "programmer_junior",
+			"name": "Programmer Junior",
+			"description": "Mengerjakan tugas pemrograman sederhana.",
+			"salary_min": 100000,
+			"salary_max": 140000,
+			"work_duration": 240,
+					"required_skill": {
+					"programming": 30
+				}
+		},
+
+		{
+			"id": "programmer",
+			"name": "Programmer",
+			"description": "Mengembangkan aplikasi perusahaan.",
+			"salary_min": 160000,
+			"salary_max": 220000,
+			"work_duration": 240,
+					"required_skill": {
+					"programming": 50
+				}
+		}
+	]
+}

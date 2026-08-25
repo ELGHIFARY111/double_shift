@@ -1,0 +1,155 @@
+[gd_scene format=3 uid="uid://bvvb31tps3uu3"]
+
+[ext_resource type="Script" uid="uid://cv16i1g5o1u5m" path="res://scripts/ui/furnitureUi.gd" id="1_srkf7"]
+[ext_resource type="Texture2D" uid="uid://bi1a1w568h64k" path="res://asset/art/other/board2.png" id="board2_tex_bg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g2fa3"]
+bg_color = Color(0.26821283, 0.22628817, 0.21056643, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="furnitureUi" type="NinePatchRect" unique_id=190364648]
+texture = ExtResource("board2_tex_bg")
+region_rect = Rect2(0, 0, 256, 256)
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+offset_right = 924.0
+offset_bottom = 447.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_g2fa3")
+script = ExtResource("1_srkf7")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2003036662]
+layout_mode = 0
+offset_right = 904.0
+offset_bottom = 427.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=48986638]
+layout_mode = 2
+
+[node name="header" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=189928371]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/header" unique_id=2020832426]
+custom_minimum_size = Vector2(820, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Penyimpanan"
+
+[node name="Control" type="Control" parent="MarginContainer/VBoxContainer/header" unique_id=871631744]
+layout_mode = 2
+
+[node name="closeButton" type="Button" parent="MarginContainer/VBoxContainer/header" unique_id=1201475092]
+layout_mode = 2
+theme_override_font_sizes/font_size = 31
+text = "  X  "
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=2099187648]
+layout_mode = 2
+
+[node name="body" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1520074685]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="leftPanel" type="VBoxContainer" parent="MarginContainer/VBoxContainer/body" unique_id=167033977]
+custom_minimum_size = Vector2(550, 0)
+layout_mode = 2
+
+[node name="searchBar" type="LineEdit" parent="MarginContainer/VBoxContainer/body/leftPanel" unique_id=768368146]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+placeholder_text = "Penacarian..."
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/body/leftPanel" unique_id=199601063]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/body/leftPanel/ScrollContainer" unique_id=536478165]
+custom_minimum_size = Vector2(550, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 4
+
+[node name="rightPanel" type="VBoxContainer" parent="MarginContainer/VBoxContainer/body" unique_id=1290501870]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/body/rightPanel" unique_id=1493864163]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer" unique_id=294181740]
+custom_minimum_size = Vector2(0, 330)
+layout_mode = 2
+
+[node name="header" type="HBoxContainer" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=241778582]
+layout_mode = 2
+
+[node name="itemName" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/header" unique_id=433363980]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="itemCategory" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/header" unique_id=1214971403]
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+horizontal_alignment = 2
+
+[node name="itemIcon" type="TextureRect" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=79003360]
+custom_minimum_size = Vector2(0, 100)
+custom_maximum_size = Vector2(-1, 100)
+layout_mode = 2
+stretch_mode = 3
+
+[node name="description" type="RichTextLabel" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=131276560]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 14
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=510800922]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=592318612]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+
+[node name="buyPrice" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=187866616]
+layout_mode = 2
+
+[node name="upgradePrice" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1211869711]
+layout_mode = 2
+
+[node name="effectLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=2066424975]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1250197572]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+
+[node name="levelLabel" type="Label" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1047738840]
+layout_mode = 2
+
+[node name="buttonContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer" unique_id=1837273320]
+layout_mode = 2
+
+[node name="actionButton" type="Button" parent="MarginContainer/VBoxContainer/body/rightPanel/MarginContainer/VBoxContainer/buttonContainer" unique_id=375453548]
+custom_minimum_size = Vector2(170, 40)
+layout_mode = 2
+text = "Pakai"
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=1483801002]
+layout_mode = 2

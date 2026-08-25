@@ -1,0 +1,97 @@
+{
+	"version": 1,
+	"author": "ELsemeluhuy",
+	"last_update": "2026-07-22",
+	"recipes": [
+		{
+		"id": "telur_dadar",
+		"name": "Telur Dadar",
+		"ingredients": [
+			{"item_id": "telur", "amount": 1},
+			{"item_id": "minyak_goreng", "amount": 1},
+			{"item_id": "garam", "amount": 1}
+		],
+		"result": {"item_id": "telur_dadar", "amount": 1},
+		"cook_time": 20,
+		"required_skill": 1
+		},
+		{
+		"id": "nasi_goreng",
+		"name": "Nasi Goreng",
+		"ingredients": [
+			{"item_id": "nasi_putih", "amount": 1},
+			{"item_id": "telur", "amount": 1},
+			{"item_id": "minyak_goreng", "amount": 1},
+			{"item_id": "bawang_merah", "amount": 1},
+			{"item_id": "bawang_putih", "amount": 1},
+			{"item_id": "garam", "amount": 1}
+		],
+		"result": {"item_id": "nasi_goreng", "amount": 1},
+		"cook_time": 45,
+		"required_skill": 2
+		},
+		{
+		"id": "nasi_putih",
+		"name": "Nasi Putih",
+		"ingredients": [
+			{"item_id": "beras", "amount": 1},
+			{"item_id": "air_mineral", "amount": 1}
+		],
+		"result": {"item_id": "nasi_putih", "amount": 2},
+		"cook_time": 40,
+		"required_skill": 1
+		},
+		{
+		"id": "sup_ayam",
+		"name": "Sup Ayam",
+		"ingredients": [
+			{"item_id": "daging_ayam", "amount": 1},
+			{"item_id": "wortel", "amount": 1},
+			{"item_id": "kentang", "amount": 1},
+			{"item_id": "bawang_putih", "amount": 1},
+			{"item_id": "garam", "amount": 1},
+			{"item_id": "air_mineral", "amount": 1}
+		],
+		"result": {"item_id": "sup_ayam", "amount": 1},
+		"cook_time": 60,
+		"required_skill": 3
+		},
+		{
+		"id": "ayam_goreng",
+		"name": "Ayam Goreng",
+		"ingredients": [
+			{"item_id": "daging_ayam", "amount": 1},
+			{"item_id": "bawang_putih", "amount": 1},
+			{"item_id": "minyak_goreng", "amount": 2},
+			{"item_id": "garam", "amount": 1}
+		],
+		"result": {"item_id": "ayam_goreng", "amount": 1},
+		"cook_time": 50,
+		"required_skill": 3
+		},
+		{
+		"id": "mie_goreng",
+		"name": "Mi Goreng",
+		"ingredients": [
+			{"item_id": "mi_instan", "amount": 1},
+			{"item_id": "telur", "amount": 1},
+			{"item_id": "bawang_merah", "amount": 1}
+		],
+		"result": {"item_id": "mie_goreng", "amount": 1},
+		"cook_time": 15,
+		"required_skill": 1
+		},
+		{
+		"id": "teh_manis",
+		"name": "Teh Manis",
+		"ingredients": [
+			{"item_id": "teh_bungkus", "amount": 1},
+			{"item_id": "gula", "amount": 1},
+			{"item_id": "air_mineral", "amount": 1}
+		],
+		"result": {"item_id": "teh", "amount": 1},
+		"cook_time": 10,
+		"required_skill": 1
+		}
+	]
+}

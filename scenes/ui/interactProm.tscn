@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://vg6vpsekepn6"]
+
+[ext_resource type="Script" uid="uid://5lf4mnrfgsf5" path="res://scripts/ui/interactProm.gd" id="1_pbfa3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w20bg"]
+content_margin_left = 10.0
+content_margin_right = 10.0
+bg_color = Color(0.16565639, 0.16565642, 0.16565639, 1)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+
+[node name="interactProm" type="MarginContainer" unique_id=1330901746]
+offset_right = 150.0
+offset_bottom = 30.0
+script = ExtResource("1_pbfa3")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=435583733]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_w20bg")
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=1335678552]
+layout_mode = 2
+vertical_alignment = 1

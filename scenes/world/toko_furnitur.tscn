@@ -1,0 +1,161 @@
+[gd_scene format=4 uid="uid://d0ab2stauhjqf"]
+
+[ext_resource type="Script" uid="uid://danmwt0i1vowm" path="res://scripts/world/house/house.gd" id="1_jg4y4"]
+[ext_resource type="Texture2D" uid="uid://dpordo02njmb0" path="res://asset/art/tiles/tembok.png" id="2_da4fp"]
+[ext_resource type="Texture2D" uid="uid://bnxrw5vag3ym5" path="res://asset/art/tiles/tilesgua.png" id="2_lhe2v"]
+[ext_resource type="Texture2D" uid="uid://cuui3emav8vfw" path="res://asset/art/tiles/Interior/Tile/floor1.png" id="3_adhfc"]
+[ext_resource type="Texture2D" uid="uid://cqt5f2hxj8vyy" path="res://asset/art/tiles/temboktinggi.png" id="3_pftmw"]
+[ext_resource type="Texture2D" uid="uid://bvj1tigv5mq3v" path="res://asset/art/tiles/dinding_jendela.png" id="4_2e1kp"]
+[ext_resource type="PackedScene" uid="uid://cto0otm3kvxbi" path="res://scenes/objects/shopCounter.tscn" id="5_a1vkn"]
+[ext_resource type="Texture2D" uid="uid://be23xqpf1dugq" path="res://asset/art/tiles/tiles1.png" id="6_d7gr8"]
+[ext_resource type="Texture2D" uid="uid://cfqjg3ji68dk7" path="res://asset/art/tiles/tiles2.png" id="7_qk4jk"]
+[ext_resource type="PackedScene" uid="uid://vv8srr8jpmbt" path="res://scenes/objects/door.tscn" id="9_nh7ns"]
+[ext_resource type="PackedScene" uid="uid://7fg7jd0r5d3s" path="res://scenes/objects/npc.tscn" id="100_npc"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_id8dw"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fvce2"]
+texture = ExtResource("2_da4fp")
+texture_region_size = Vector2i(64, 128)
+3:1/0 = 0
+4:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, 8)
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uypma"]
+texture = ExtResource("3_pftmw")
+texture_region_size = Vector2i(64, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, 8)
+0:1/0 = 0
+1:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v0xkm"]
+texture = ExtResource("4_2e1kp")
+texture_region_size = Vector2i(64, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, 8)
+0:1/0 = 0
+1:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_g461k"]
+tile_shape = 1
+tile_size = Vector2i(64, 32)
+sources/0 = SubResource("TileSetAtlasSource_fvce2")
+sources/1 = SubResource("TileSetAtlasSource_uypma")
+sources/2 = SubResource("TileSetAtlasSource_v0xkm")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6rkur"]
+texture = ExtResource("2_lhe2v")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eh1sj"]
+texture = ExtResource("6_d7gr8")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_23ejt"]
+texture = ExtResource("7_qk4jk")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sn4hj"]
+texture = ExtResource("3_adhfc")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_2hvh7"]
+tile_shape = 1
+tile_size = Vector2i(64, 32)
+sources/4 = SubResource("TileSetAtlasSource_sn4hj")
+sources/0 = SubResource("TileSetAtlasSource_6rkur")
+sources/1 = SubResource("TileSetAtlasSource_eh1sj")
+sources/2 = SubResource("TileSetAtlasSource_23ejt")
+
+[node name="toko_furnitur" type="Node2D" unique_id=1811493115]
+script = ExtResource("1_jg4y4")
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1967401704]
+navigation_polygon = SubResource("NavigationPolygon_id8dw")
+
+[node name="TileMapWall" type="TileMapLayer" parent="." unique_id=1531980189]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD+//7/AQAAAAAAAAD+//3/AgAAAAAAAAD///z/AQAAAAAAAAD///v/AQAAAAAAAAAAAPr/AQAAAAAAAAABAPr/AQABAAAAAAABAPv/AQABAAAAAAACAPz/AQABAAAAAAACAP3/AgABAAAAAAADAP7/AQABAAAAAAADAP//AQABAAAAAAAEAAAAAQABAAAAAAAEAAEAAQABAAAAAAAFAAIAAQABAAAAAAAFAAMAAQABAAAAAAAGAAQAAQABAAAAAAAGAAUAAQABAAAAAAAHAAYAAQABAAAAAAAHAAcAAQABAAAAAAAIAAgAAQABAAAAAAAIAAkAAQABAAAAAAD9////AQAAAAAAAAA=")
+tile_set = SubResource("TileSet_g461k")
+
+[node name="TileMapGround" type="TileMapLayer" parent="." unique_id=445034833]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAAAAAAAAgAAAAAAAAAAAAEAAgAAAAAAAAABAAAAAgAAAAAAAAAAAP//AgAAAAAAAAD//wEAAgAAAAAAAAAAAAIAAgAAAAAAAAAAAAMAAgAAAAAAAAABAAIAAgAAAAAAAAABAAEAAgAAAAAAAAD//wMAAgAAAAAAAAAAAAQAAgAAAAAAAAABAAQAAQAAAAAAAAACAAIAAQAAAAAAAAABAAMAAQAAAAAAAAAAAAUAAQAAAAAAAAACAAMAAQAAAAAAAAACAAQAAQAAAAAAAAACAAUAAQAAAAAAAAACAAYAAQAAAAAAAAABAAUAAQAAAAAAAAABAAYAAQAAAAAAAAABAAcAAQAAAAAAAAADAAQAAQAAAAAAAAADAAIAAQAAAAAAAAADAAMAAQAAAAAAAAACAAEAAQAAAAAAAAACAAAAAgAAAAAAAAABAP//AgAAAAAAAAACAAgAAQAAAAAAAAACAAcAAQAAAAAAAAADAAYAAQAAAAAAAAADAAUAAQAAAAAAAAAEAAQAAQAAAAAAAAACAAkAAQAAAAAAAAADAAgAAQAAAAAAAAADAAcAAQAAAAAAAAAEAAYAAQAAAAAAAAAEAAUAAQAAAAAAAAAFAAYAAQAAAAAAAAAEAAcAAQAAAAAAAAAEAAgAAQAAAAAAAAADAAkAAQAAAAAAAAADAAoAAQAAAAAAAAACAAsAAQAAAAAAAAADAAsAAQAAAAAAAAAEAAoAAQAAAAAAAAAEAAsAAQAAAAAAAAAEAAkAAQAAAAAAAAAFAAgAAQAAAAAAAAAFAAcAAQAAAAAAAAAFAAoAAQAAAAAAAAAEAAwAAQAAAAAAAAABAP7/AgAAAAAAAAD//wIAAgAAAAAAAAACAAoAAQAAAAAAAAADAAwAAQAAAAAAAAAFAAkAAQAAAAAAAAAGAAgAAQAAAAAAAAAGAAkAAQAAAAAAAAAGAAoAAQAAAAAAAAAFAAsAAQAAAAAAAAAGAAwAAQAAAAAAAAAFAA0AAQAAAAAAAAAFAAwAAQAAAAAAAAAEAA0AAQAAAAAAAAAFAA4AAQAAAAAAAAAGAAsAAQAAAAAAAAAHAAoAAQAAAAAAAAAHAAsAAQAAAAAAAAAHAAwAAQAAAAAAAAAGAA0AAQAAAAAAAAAGAA4AAQAAAAAAAAAFAA8AAQAAAAAAAAAIAAoAAQAAAAAAAAAHAAkAAQAAAAAAAAAHAAgAAQAAAAAAAAAGAAcAAQAAAAAAAAAGAAYAAQAAAAAAAAAFAAUAAQAAAAAAAAAFAAQAAQAAAAAAAAAEAAMAAQAAAAAAAAAEAAIAAQAAAAAAAAADAAEAAQAAAAAAAAADAAAAAQAAAAAAAAACAP//AgAAAAAAAAACAP7/AgAAAAAAAAABAP3/AgAAAAAAAAD+/wEAAgAAAAAAAAD//wAAAgAAAAAAAAD/////AgAAAAAAAAAAAP7/AgAAAAAAAAD///3/AgAAAAAAAAAAAPz/AgAAAAAAAAAAAP3/AgAAAAAAAAAAAPv/AgAAAAAAAAABAPz/AgAAAAAAAAD///7/AgAAAAAAAAD+////AgAAAAAAAAD+/wAAAgAAAAAAAAA=")
+tile_set = SubResource("TileSet_2hvh7")
+
+[node name="TileMapDecorations" type="TileMapLayer" parent="." unique_id=791162778]
+
+[node name="objects" type="Node2D" parent="." unique_id=1590535622]
+
+[node name="pintu" parent="." unique_id=2029152970 instance=ExtResource("9_nh7ns")]
+position = Vector2(217, 172)
+
+[node name="shopCounter" parent="." unique_id=1527486394 instance=ExtResource("5_a1vkn")]
+shop_id = "toko_furnitur"
+
+[node name="NPC_pak_hadi" parent="." unique_id=1420956770 instance=ExtResource("100_npc")]
+position = Vector2(32, -32)
+npc_id = "pak_hadi"

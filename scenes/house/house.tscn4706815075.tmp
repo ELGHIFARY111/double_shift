@@ -1,0 +1,76 @@
+[gd_scene format=4 uid="uid://bbxpovvkj8x71"]
+
+[ext_resource type="Texture2D" uid="uid://bnxrw5vag3ym5" path="res://asset/art/tiles/tilesgua.png" id="1_12j21"]
+[ext_resource type="Texture2D" uid="uid://cuui3emav8vfw" path="res://asset/art/tiles/Interior/Tile/floor1.png" id="1_44bws"]
+[ext_resource type="Script" uid="uid://danmwt0i1vowm" path="res://scripts/world/house/house.gd" id="1_yj2u4"]
+[ext_resource type="PackedScene" uid="uid://cs0ovowlixq8v" path="res://scenes/objects/bed.tscn" id="5_wusmn"]
+[ext_resource type="PackedScene" uid="uid://bq7qbbtua0h72" path="res://scenes/objects/washingMachine.tscn" id="6_mfwx6"]
+[ext_resource type="PackedScene" uid="uid://rmix5upureia" path="res://scenes/objects/tv.tscn" id="7_12j21"]
+[ext_resource type="PackedScene" uid="uid://2feebcwyw7wh" path="res://scenes/objects/stove.tscn" id="8_ycl3c"]
+[ext_resource type="PackedScene" uid="uid://1kipry8d78gk" path="res://scenes/objects/computer.tscn" id="9_j2j1c"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_id8dw"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j2j1c"]
+texture = ExtResource("1_12j21")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yj2u4"]
+texture = ExtResource("1_44bws")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_p5viw"]
+tile_shape = 1
+tile_size = Vector2i(64, 32)
+sources/4 = SubResource("TileSetAtlasSource_yj2u4")
+sources/0 = SubResource("TileSetAtlasSource_j2j1c")
+
+[node name="house" type="Node2D" unique_id=1811493115]
+script = ExtResource("1_yj2u4")
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1967401704]
+navigation_polygon = SubResource("NavigationPolygon_id8dw")
+
+[node name="TileMapGround" type="TileMapLayer" parent="." unique_id=1917646430]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAAAAAAAAAAAAAP//AAAAAAAAAAD//wEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAABAAIAAAAAAAAAAAABAAEAAAAAAAAAAAD//wMAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAQAAAAAAAAAAAACAAIAAAAAAAAAAAABAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAACAAMAAAAAAAAAAAACAAQAAAAAAAAAAAACAAUAAAAAAAAAAAACAAYAAAAAAAAAAAABAAUAAAAAAAAAAAABAAYAAAAAAAAAAAABAAcAAAAAAAAAAAADAAQAAAAAAAAAAAADAAIAAAAAAAAAAAADAAMAAAAAAAAAAAACAAEAAAAAAAAAAAACAAAAAAAAAAAAAAABAP//AAAAAAAAAAACAAgABAABAAUAAAACAAcABAABAAUAAAADAAYABAABAAUAAAADAAUABAABAAUAAAAEAAQABAABAAUAAAACAAkABAABAAUAAAADAAgABAABAAUAAAADAAcABAABAAUAAAAEAAYABAABAAUAAAAEAAUABAABAAUAAAAFAAYABAABAAUAAAAEAAcABAABAAUAAAAEAAgABAABAAUAAAADAAkABAABAAUAAAADAAoABAABAAUAAAACAAsABAABAAUAAAADAAsABAABAAUAAAAEAAoABAABAAUAAAAEAAsABAABAAUAAAAEAAkABAABAAUAAAAFAAgABAABAAUAAAAFAAcABAABAAUAAAAFAAoABAABAAUAAAAEAAwABAABAAUAAAABAP7/AAAAAAAAAAD//wIAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_p5viw")
+
+[node name="TileMapDecorations" type="TileMapLayer" parent="." unique_id=791162778]
+
+[node name="objects" type="Node2D" parent="." unique_id=1590535622]
+
+[node name="kasur" parent="objects" unique_id=1584118940 instance=ExtResource("5_wusmn")]
+position = Vector2(64, 25)
+
+[node name="mesin_cuci" parent="objects" unique_id=1432754860 instance=ExtResource("6_mfwx6")]
+position = Vector2(281, 58)
+
+[node name="tv" parent="objects" unique_id=849628750 instance=ExtResource("7_12j21")]
+position = Vector2(314, 79)
+
+[node name="kompor" parent="objects" unique_id=1523158845 instance=ExtResource("8_ycl3c")]
+position = Vector2(358, 99)
+
+[node name="meja_belajar" parent="objects" unique_id=579298950 instance=ExtResource("9_j2j1c")]
+position = Vector2(162, 4)

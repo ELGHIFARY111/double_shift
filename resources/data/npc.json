@@ -1,0 +1,42 @@
+{
+	"version": 1,
+	"author": "ELsemeluhuy",
+	"last_update": "2026-07-22",
+	"npcs": [
+		{
+			"id": "pak_budi",
+			"name": "Pak Budi",
+			"occupation": "Penjaga Toserba",
+			"location": "toserba",
+			"dialogue": "pak_budi",
+			"sprite": "res://assets/npc/pak_budi.png"
+		},
+
+		{
+			"id": "bu_sinta",
+			"name": "Bu Sinta",
+			"occupation": "Penjaga Toko Buku",
+			"location": "toko_buku",
+			"dialogue": "bu_sinta",
+			"sprite": "res://assets/npc/bu_sinta.png"
+		},
+
+		{
+			"id": "pak_hadi",
+			"name": "Pak Hadi",
+			"occupation": "Penjaga Toko Furnitur",
+			"location": "toko_furnitur",
+			"dialogue": "pak_hadi",
+			"sprite": "res://assets/npc/pak_hadi.png"
+		},
+
+		{
+			"id": "pak_rahmat",
+			"name": "Pak Rahmat",
+			"occupation": "HRD",
+			"location": "kantor",
+			"dialogue": "pak_rahmat",
+			"sprite": "res://assets/npc/pak_rahmat.png"
+		}
+	]
+}

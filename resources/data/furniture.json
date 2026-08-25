@@ -1,0 +1,279 @@
+{
+	"version": 1,
+	"author": "ELsemeluhuy",
+	"last_update": "2026-07-22",
+	"furniture": [
+		{
+			"id": "kasur",
+			"name": "Kasur",
+			"description": "Kasur yang nyaman untuk beristirahat.",
+			"shop": "toko_furnitur",
+			"buy_price": 50000,
+			"upgradeable": true,
+			"actions": [
+				{
+					"id": "sleep",
+					"name": "Tidur"
+				}
+			],
+			"levels": [
+				{
+					"level": 1,
+					"upgrade_price": 0,
+					"effects": {
+						"stress_reduction": 10
+					}
+				},
+				{
+					"level": 2,
+					"upgrade_price": 300000,
+					"effects": {
+						"stress_reduction": 20
+					}
+				},
+				{
+					"level": 3,
+					"upgrade_price": 500000,
+					"effects": {
+						"stress_reduction": 30
+					}
+				}
+			],
+			"icon": "res://asset/art/objects/kasur.png"
+		},
+		{
+			"id": "kompor",
+			"name": "Kompor",
+			"description": "Digunakan untuk memasak makanan.",
+			"shop": "toko_furnitur",
+			"buy_price": 60000,
+			"upgradeable": true,
+			"actions": [
+				{
+					"id": "cook",
+					"name": "Memasak"
+				}
+			],
+			"levels": [
+				{
+					"level": 1,
+					"upgrade_price": 0,
+					"effects": {
+						"cook_speed": 1.0
+					}
+				},
+				{
+					"level": 2,
+					"upgrade_price": 200000,
+					"effects": {
+						"cook_speed": 0.85
+					}
+				},
+				{
+					"level": 3,
+					"upgrade_price": 700000,
+					"effects": {
+						"cook_speed": 0.70
+					}
+				}
+			],
+			"icon": "res://asset/art/objects/kompor1.png"
+		},
+		{
+			"id": "mesin_cuci",
+			"name": "Mesin Cuci",
+			"description": "Mempercepat proses mencuci pakaian.",
+			"shop": "toko_furnitur",
+			"buy_price": 50000,
+			"upgradeable": true,
+			"actions": [
+				{
+					"id": "wash_clothes",
+					"name": "Mencuci Pakaian"
+				}
+			],
+			"levels": [
+				{
+					"level": 1,
+					"upgrade_price": 0,
+					"effects": {
+						"wash_speed": 1.0
+					}
+				},
+				{
+					"level": 2,
+					"upgrade_price": 750000,
+					"effects": {
+						"wash_speed": 0.80
+					}
+				},
+				{
+					"level": 3,
+					"upgrade_price": 1250000,
+					"effects": {
+						"wash_speed": 0.60
+					}
+				}
+			],
+			"icon": "res://asset/art/objects/mesin_cuci.png"
+		},
+		{
+			"id": "lemari",
+			"name": "Lemari",
+			"description": "Tempat menyimpan pakaian.",
+			"shop": "toko_furnitur",
+			"buy_price": 450000,
+			"upgradeable": false,
+			"actions": [
+				{
+					"id": "change_clothes",
+					"name": "Ganti Pakaian"
+				}
+			],
+			"icon": "res://asset/art/objects/lemari.png"
+		},
+		{
+			"id": "meja_belajar",
+			"name": "Meja Belajar",
+			"description": "Digunakan untuk belajar.",
+			"shop": "toko_furnitur",
+			"buy_price": 300000,
+			"upgradeable": false,
+			"actions": [
+				{
+					"id": "study",
+					"name": "Belajar"
+				}
+			],
+			"icon": "res://asset/art/objects/meja_belajar.png"
+		},
+		{
+			"id": "tv",
+			"name": "TV",
+			"description": "Digunakan untuk menonton berita dan hiburan.",
+			"shop": "toko_furnitur",
+			"buy_price": 300000,
+			"upgradeable": false,
+			"actions": [
+				{
+					"id": "watch_tv",
+					"name": "Menonton TV"
+				}
+			],
+			"icon": "res://asset/art/objects/tv.png"
+		},
+		{
+			"id": "door",
+			"name": "Pintu",
+			"description": "Digunakan untuk berpindah lokasi.",
+			"shop": "",
+			"buy_price": 0,
+			"upgradeable": false,
+			"actions": [
+				{
+					"id": "travel",
+					"name": "Keluar"
+				}
+			],
+			"icon": "res://asset/art/objects/tv.png"
+		},
+		{
+			"id": "kasir_toserba",
+			"name": "Kasir Toserba",
+			"description": "Tempat belanja kebutuhan sehari-hari.",
+			"shop": "",
+			"buy_price": 0,
+			"upgradeable": false,
+			"actions": [
+				{
+					"id": "shop",
+					"name": "Belanja"
+				}
+			],
+			"icon": ""
+		},
+		{
+			"id": "kasir_toko_buku",
+			"name": "Kasir Toko Buku",
+			"description": "Tempat membeli buku-buku.",
+			"shop": "",
+			"buy_price": 0,
+			"upgradeable": false,
+			"actions": [
+				{
+					"id": "shop",
+					"name": "Belanja"
+				}
+			],
+			"icon": ""
+		},
+		{
+			"id": "kasir_toko_furnitur",
+			"name": "Kasir Toko Furnitur",
+			"description": "Tempat membeli furnitur untuk rumah.",
+			"shop": "",
+			"buy_price": 0,
+			"upgradeable": false,
+			"actions": [
+				{
+					"id": "shop",
+					"name": "Belanja"
+				}
+			],
+			"icon": ""
+		},
+		{
+			"id": "mesin_absen",
+			"name": "Mesin Absensi",
+			"description": "Gunakan ini untuk mulai bekerja (Clock-in).",
+			"shop": "",
+			"buy_price": 0,
+			"upgradeable": false,
+			"actions": [
+				{
+					"id": "work",
+					"name": "Absen Bekerja"
+				}
+			],
+			"icon": ""
+		},
+		{
+			"id": "komputer_pribadi",
+			"name": "Komputer Pribadi",
+			"description": "Gunakan ini untuk melamar pekerjaan atau resign.",
+			"shop": "toko_furnitur",
+			"buy_price": 50000,
+			"upgradeable": false,
+			"actions": [
+				{
+					"id": "job_portal",
+					"name": "Job Portal"
+				},
+				{
+					"id": "email",
+					"name": "Buka Email"
+				},
+				{
+					"id": "career_status",
+					"name": "Status Karir"
+				}
+			],
+			"icon": ""
+		},
+		{
+			"id": "wastafel",
+			"name": "Wastafel",
+			"description": "Gunakan ini untuk mencuci piring yang kotor.",
+			"shop": "toko_furnitur",
+			"buy_price": 50000,
+			"upgradeable": false,
+			"actions": [
+				{
+					"id": "wash_dishes",
+					"name": "Mencuci Piring"
+				}
+			],
+			"icon": ""
+		}
+	]
+}

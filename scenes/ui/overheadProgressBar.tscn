@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cpcydmhm0375j"]
+
+[ext_resource type="Script" uid="uid://d4nioaqml515r" path="res://scripts/ui/overheadProgressBar.gd" id="1_ovr"]
+[ext_resource type="StyleBox" uid="uid://6lud1tdkhuae" path="res://asset/theme/progresbar_back.tres" id="1_q748f"]
+[ext_resource type="StyleBox" uid="uid://b046v3qamxpj6" path="res://asset/theme/progresbar_fill.tres" id="2_3ceav"]
+
+[node name="OverheadProgressBar" type="ProgressBar" unique_id=549419586]
+custom_minimum_size = Vector2(80, 10)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -43.589996
+offset_right = 40.0
+offset_bottom = -33.589996
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = ExtResource("1_q748f")
+theme_override_styles/fill = ExtResource("2_3ceav")
+max_value = 1.0
+show_percentage = false
+script = ExtResource("1_ovr")
