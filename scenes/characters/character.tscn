@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cbvoo5bld3jj3"]
+[gd_scene format=3 uid="uid://dpspomj3civc7"]
 
 [ext_resource type="Script" uid="uid://cqbayfukliisy" path="res://scripts/characters/character.gd" id="1_x31xa"]
 [ext_resource type="Texture2D" uid="uid://1q4q6fjovts1" path="res://asset/art/char/jefri/sheet/idle-atas-Sheet.png" id="2_hm0uo"]

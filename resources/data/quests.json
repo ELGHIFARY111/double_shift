@@ -1,55 +1,55 @@
 {
-    "quests": [
-        {
-            "id": "tutorial_1",
-            "trigger_day": 1,
-            "title": "Pindahan Rumah",
-            "description": "Kalian baru saja pindah ke rumah baru yang masih kosong. Pergilah keluar menuju Toko Furnitur dan belilah sebuah Komputer agar kamu bisa mencari pekerjaan besok.",
-            "objectives": [
-                {
-                    "id": "buy_furniture",
-                    "type": "buy_furniture",
-                    "target": 1,
-                    "description": "Beli furnitur apa saja"
-                }
-            ],
-            "rewards": {
-                "money": 100
-            }
-        },
-        {
-            "id": "tutorial_2",
-            "trigger_day": 2,
-            "title": "Mencari Nafkah",
-            "description": "Sekarang kamu sudah memiliki Komputer. Buka Komputer tersebut dan lamar pekerjaan pertamamu di Job Portal.",
-            "objectives": [
-                {
-                    "id": "apply_job",
-                    "type": "apply_job",
-                    "target": 1,
-                    "description": "Lamar pekerjaan"
-                }
-            ],
-            "rewards": {
-                "money": 200
-            }
-        },
-        {
-            "id": "tutorial_3",
-            "trigger_day": 3,
-            "title": "Beban Mental",
-            "description": "Keluarga butuh tempat yang bersih agar tidak stres. Jika kamu punya Wastafel, cobalah mencuci piring hari ini.",
-            "objectives": [
-                {
-                    "id": "wash_dishes",
-                    "type": "wash_dishes",
-                    "target": 1,
-                    "description": "Cuci piring kotor"
-                }
-            ],
-            "rewards": {
-                "money": 150
-            }
-        }
-    ]
+	"quests": [
+		{
+			"id": "tutorial_1",
+			"trigger_day": 1,
+			"title": "Pindahan Rumah",
+			"description": "Kalian baru saja pindah ke rumah baru yang masih kosong. Pergilah keluar menuju Toko Furnitur dan belilah sebuah Komputer agar kamu bisa mencari pekerjaan besok.",
+			"objectives": [
+				{
+					"id": "buy_furniture",
+					"type": "buy_furniture",
+					"target": 1,
+					"description": "Beli furnitur apa saja"
+				}
+			],
+			"rewards": {
+				"money": 100
+			}
+		},
+		{
+			"id": "tutorial_2",
+			"trigger_day": 2,
+			"title": "Mencari Nafkah",
+			"description": "Sekarang kamu sudah memiliki Komputer. Buka Komputer tersebut dan lamar pekerjaan pertamamu di Job Portal.",
+			"objectives": [
+				{
+					"id": "apply_job",
+					"type": "apply_job",
+					"target": 1,
+					"description": "Lamar pekerjaan"
+				}
+			],
+			"rewards": {
+				"money": 200
+			}
+		},
+		{
+			"id": "tutorial_3",
+			"trigger_day": 3,
+			"title": "Beban Mental",
+			"description": "Keluarga butuh tempat yang bersih agar tidak stres. Jika kamu punya Wastafel, cobalah mencuci piring hari ini.",
+			"objectives": [
+				{
+					"id": "wash_dishes",
+					"type": "wash_dishes",
+					"target": 1,
+					"description": "Cuci piring kotor"
+				}
+			],
+			"rewards": {
+				"money": 150
+			}
+		}
+	]
 }
