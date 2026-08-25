@@ -17,6 +17,7 @@ func register_character_layer(layer: Node) -> void:
 func get_character_layer() -> Node:
 	return _character_layer
 
+# Force recompile
 
 func spawn(character_id: String) -> CharacterBody2D:
 	if _characters.has(character_id):

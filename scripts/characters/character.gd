@@ -294,17 +294,21 @@ func _update_animation() -> void:
 		if degrees < 0: degrees += 360
 		
 		if degrees >= 337.5 or degrees < 22.5: dir_str = "kanan"
-		elif degrees >= 22.5 and degrees < 67.5: dir_str = "serong-kanan-bawah"
+		elif degrees >= 22.5 and degrees < 67.5: dir_str = "serong-bawah-kanan"
 		elif degrees >= 67.5 and degrees < 112.5: dir_str = "bawah"
-		elif degrees >= 112.5 and degrees < 157.5: dir_str = "serong-kiri-bawah"
+		elif degrees >= 112.5 and degrees < 157.5: dir_str = "serong-bawah-kiri"
 		elif degrees >= 157.5 and degrees < 202.5: dir_str = "kiri"
-		elif degrees >= 202.5 and degrees < 247.5: dir_str = "serong-kiri-atas"
+		elif degrees >= 202.5 and degrees < 247.5: dir_str = "serong-atas-kiri"
 		elif degrees >= 247.5 and degrees < 292.5: dir_str = "atas"
-		elif degrees >= 292.5 and degrees < 337.5: dir_str = "serong-kanan-atas"
+		elif degrees >= 292.5 and degrees < 337.5: dir_str = "serong-atas-kanan"
 		
 		_last_direction = dir_str
 	
 	var anim_name = prefix + dir_str
+	
+	if anim_name == "idle-serong-bawah-kanan":
+		anim_name = "idle-serong-kanan-bawah"
+		
 	if anim_sprite.sprite_frames.has_animation(anim_name):
 		anim_sprite.play(anim_name)
 	elif anim_sprite.sprite_frames.has_animation(prefix + "bawah"):
